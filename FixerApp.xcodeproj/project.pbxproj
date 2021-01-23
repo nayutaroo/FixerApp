@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */; };
+		D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */; };
+		D71373A125BBBD4400DBF96B /* TimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */; };
+		D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */; };
 		D752C9E12595D30E005A4889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E02595D30E005A4889 /* AppDelegate.swift */; };
 		D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E22595D30E005A4889 /* SceneDelegate.swift */; };
 		D752C9E52595D30E005A4889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E42595D30E005A4889 /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneHeader.swift; sourceTree = "<group>"; };
+		D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeZoneHeader.xib; sourceTree = "<group>"; };
+		D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCell.swift; sourceTree = "<group>"; };
+		D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeZoneCell.xib; sourceTree = "<group>"; };
 		D752C9DD2595D30E005A4889 /* FixerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D752C9E02595D30E005A4889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D752C9E22595D30E005A4889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				D752C9E22595D30E005A4889 /* SceneDelegate.swift */,
 				D752C9E42595D30E005A4889 /* ViewController.swift */,
 				D752C9E62595D30E005A4889 /* Main.storyboard */,
+				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
+				D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */,
+				D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */,
+				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
 				D752C9E92595D312005A4889 /* Assets.xcassets */,
 				D752C9EB2595D312005A4889 /* LaunchScreen.storyboard */,
 				D752C9EE2595D312005A4889 /* Info.plist */,
@@ -231,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */,
+				D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */,
 				D752C9ED2595D312005A4889 /* LaunchScreen.storyboard in Resources */,
 				D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */,
 				D752C9E82595D30E005A4889 /* Main.storyboard in Resources */,
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
 				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,
+				D71373A125BBBD4400DBF96B /* TimeZoneCell.swift in Sources */,
 				D752C9E12595D30E005A4889 /* AppDelegate.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
 			);
