@@ -13,8 +13,8 @@ enum TimeZoneStatus{
  case undecided
  case unavailable
     
-    func color() ->UIColor{
-        switch self{
+    func color() -> UIColor {
+        switch self {
         case .available:
             return .red
         case .undecided:
@@ -29,17 +29,13 @@ class TimeZoneCell: UICollectionViewCell {
     @IBOutlet weak var timezoneLabel: UILabel!
     var status: TimeZoneStatus = .unavailable
     
-//    init(status: Status){
-//        self.status = status
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override func prepareForReuse() {
+        status = .unavailable
     }
 
 }

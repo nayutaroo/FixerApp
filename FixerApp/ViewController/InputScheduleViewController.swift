@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InputScheduleViewController: UIViewController {
     
-    private var timeZoneStatus: TimeZoneStatus = .unavailable
+    private var selectedStatus: TimeZoneStatus = .unavailable
     private var selectedDate: [Date] = []
+    private var scheduleData: [[ TimeZoneStatus ]] = [[]]
     
     @IBOutlet weak var timeZoneColectionView: UICollectionView!{
         didSet{
@@ -23,23 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonCross: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
     
-    //CollectionViewなどには動作しない
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        print("began")
-//        if let touch = touches.first{
-//            let point = touch.location(in: timeZoneColectionView)
-//            print(point)
-//        }
-//    }
-//
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        print("moved")
-//        if let touch = touches.first{
-//            let point = touch.location(in: timeZoneColectionView)
-//            print(point)
-//        }
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -51,11 +35,11 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .gray
         
         let layout = UICollectionViewFlowLayout()
-        layout.headerReferenceSize = CGSize(width: self.view.bounds.width, height: 20.0)
+        layout.headerReferenceSize = CGSize(width: self.view.bounds.width, height: 30.0)
         layout.sectionInset = UIEdgeInsets(top:10, left:30, bottom:10, right: 30)
         layout.minimumInteritemSpacing = 1
         let size = UIScreen.main.bounds.size
-        layout.itemSize = CGSize(width: (size.width - 70) / 8, height: 50)
+        layout.itemSize = CGSize(width: (size.width - 70) / 8, height: 60)
     
         timeZoneColectionView.collectionViewLayout = layout
         timeZoneColectionView.register(UINib(nibName: "TimeZoneCell", bundle: nil), forCellWithReuseIdentifier: "timeZoneCell")
@@ -70,23 +54,25 @@ class ViewController: UIViewController {
             dateComponents.day! = day
             selectedDate.append(calendar.date(from:dateComponents)!)
         }
+        
+        scheduleData = [[TimeZoneStatus]](repeating: [ TimeZoneStatus ](repeating: .unavailable, count: 8), count: selectedDate.count)
     }
     
     @IBAction func buttonCircleTapped(_ sender: Any) {
-        timeZoneStatus = .available
+        selectedStatus = .available
     }
     @IBAction func buttonTriangleTapped(_ sender: Any) {
-        timeZoneStatus = .undecided
+        selectedStatus = .undecided
     }
     @IBAction func buttonCrossTapped(_ sender: Any) {
-        timeZoneStatus = .unavailable
+        selectedStatus = .unavailable
     }
     @IBAction func buttonSendtapped(_ sender: Any) {
-        
+        navigationController?.popViewController(animated: true)
     }
 }
 
-extension ViewController: UICollectionViewDelegate{
+extension InputScheduleViewController: UICollectionViewDelegate{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return selectedDate.count
     }
@@ -109,35 +95,31 @@ extension ViewController: UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = collectionView.cellForItem(at: indexPath) as! TimeZoneCell
-        item.status = timeZoneStatus
-        item.contentView.backgroundColor = timeZoneStatus.color()
-       print(indexPath)
+        scheduleData[indexPath.section][indexPath.row] = selectedStatus
+        item.contentView.backgroundColor = selectedStatus.color()
+//       print(indexPath)
     }
 
     
     func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
-        // Returning `true` automatically sets `collectionView.allowsMultipleSelection`
-        // to `true`. The app sets it to `false` after the user taps the Done button.
         return true
     }
 }
 
 
-extension ViewController: UICollectionViewDataSource{
+extension InputScheduleViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
     }
 
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let timezones = ["16〜17","〜18","〜19","〜20","〜21","〜22","〜23","〜24"]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "timeZoneCell", for: indexPath) as! TimeZoneCell
-        print(indexPath)
-        cell.contentView.backgroundColor = cell.status.color()
+        let timezoneStatus = scheduleData[indexPath.section][indexPath.row]
+        cell.contentView.backgroundColor = timezoneStatus.color()
         cell.timezoneLabel.text = timezones[indexPath.row]
         cell.layer.cornerRadius = 5
         return cell
     }
-    
 }
 

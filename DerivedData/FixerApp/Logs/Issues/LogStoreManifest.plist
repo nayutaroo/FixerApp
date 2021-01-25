@@ -6,7 +6,63 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>EBEA3A44-292B-4FBE-AC2D-4EEDAB921BF9</key>
+		<key>07AAAC74-FD86-43C7-A67B-2BA52A3CB11B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>07AAAC74-FD86-43C7-A67B-2BA52A3CB11B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>FSCalendar-bzvwvhzukxljoyfgwtzmckmbofxx</string>
+			<key>timeStartedRecording</key>
+			<real>633246564.921749</real>
+			<key>timeStoppedRecording</key>
+			<real>633246564.92206299</real>
+			<key>title</key>
+			<string>Build target FSCalendar</string>
+			<key>uniqueIdentifier</key>
+			<string>07AAAC74-FD86-43C7-A67B-2BA52A3CB11B</string>
+		</dict>
+		<key>09099CC2-638D-4DCD-9554-B381D0B894D3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>09099CC2-638D-4DCD-9554-B381D0B894D3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-FixerApp-bzvwvhzukxljoyfgwtzmckmbofxx</string>
+			<key>timeStartedRecording</key>
+			<real>633246147.46727002</real>
+			<key>timeStoppedRecording</key>
+			<real>633246147.48201799</real>
+			<key>title</key>
+			<string>Build target Pods-FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>09099CC2-638D-4DCD-9554-B381D0B894D3</string>
+		</dict>
+		<key>C51D85DA-DC82-4B50-8656-D42E735EA499</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +71,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>EBEA3A44-292B-4FBE-AC2D-4EEDAB921BF9.xcactivitylog</string>
+			<string>C51D85DA-DC82-4B50-8656-D42E735EA499.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +82,41 @@
 			<key>signature</key>
 			<string>FixerApp-dhfjqiurjssqfudltkeozqdtkrcv</string>
 			<key>timeStartedRecording</key>
-			<real>633077152.83259797</real>
+			<real>633246563.65056396</real>
 			<key>timeStoppedRecording</key>
-			<real>633077155.87435198</real>
+			<real>633246564.916942</real>
 			<key>title</key>
 			<string>Build target FixerApp</string>
 			<key>uniqueIdentifier</key>
-			<string>EBEA3A44-292B-4FBE-AC2D-4EEDAB921BF9</string>
+			<string>C51D85DA-DC82-4B50-8656-D42E735EA499</string>
+		</dict>
+		<key>EDC5078A-8E61-469C-B0FF-05DEF3791FFD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>EDC5078A-8E61-469C-B0FF-05DEF3791FFD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>CalculateCalendarLogic-bzvwvhzukxljoyfgwtzmckmbofxx</string>
+			<key>timeStartedRecording</key>
+			<real>633246147.41226304</real>
+			<key>timeStoppedRecording</key>
+			<real>633246147.47133005</real>
+			<key>title</key>
+			<string>Build target CalculateCalendarLogic</string>
+			<key>uniqueIdentifier</key>
+			<string>EDC5078A-8E61-469C-B0FF-05DEF3791FFD</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FixerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="inputScheduleButton" destination="trx-qB-evY" id="9SI-wQ-rXb"/>
+                <outlet property="makeScheduleButton" destination="kAt-GQ-bu3" id="mjo-Rz-6uV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAt-GQ-bu3">
+                    <rect key="frame" x="176" y="150" width="62" height="30"/>
+                    <state key="normal" title="作成する"/>
+                    <connections>
+                        <action selector="makeScheduleButtonTapped:" destination="-1" eventType="touchUpInside" id="mG4-mY-9ro"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trx-qB-evY">
+                    <rect key="frame" x="176" y="380" width="62" height="30"/>
+                    <state key="normal" title="入力する"/>
+                    <connections>
+                        <action selector="makeInputButtonTapped:" destination="-1" eventType="touchUpInside" id="y7v-eY-cgZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="trx-qB-evY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YNh-Nh-m58"/>
+                <constraint firstItem="trx-qB-evY" firstAttribute="top" secondItem="kAt-GQ-bu3" secondAttribute="bottom" constant="200" id="eK8-M6-98y"/>
+                <constraint firstItem="kAt-GQ-bu3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="eRy-y1-sJp"/>
+                <constraint firstItem="kAt-GQ-bu3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rvF-wX-yLw"/>
+            </constraints>
+            <point key="canvasLocation" x="-146" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
