@@ -27,6 +27,11 @@
 		D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */; };
 		D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */; };
 		D77E3B8725BE90AC00BC8BB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */; };
+		D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */; };
+		D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */; };
+		D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */; };
+		D77E3BA425C067EF00BC8BB6 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */; };
+		D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */; };
 		F0D08FBD85E4D819D6497E7E /* Pods_FixerApp_FixerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8AA7CD7FB6E1A14C5B52F /* Pods_FixerApp_FixerAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +84,11 @@
 		D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputScheduleViewController.xib; sourceTree = "<group>"; };
 		D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYcalendarCell.swift; sourceTree = "<group>"; };
+		D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
 		E95265B8F340D9CA29C5748A /* Pods-FixerApp-FixerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerApp-FixerAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FixerApp-FixerAppUITests/Pods-FixerApp-FixerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FFA8AA7CD7FB6E1A14C5B52F /* Pods_FixerApp_FixerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FixerApp_FixerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D77E3B8325BE905E00BC8BB6 /* Main(deleted) */,
-				D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */,
-				D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */,
+				D77E3BA125C0679400BC8BB6 /* Home */,
 				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
 				D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */,
 				D71373A925BD455500DBF96B /* MakeScheduleViewController.swift */,
@@ -155,6 +164,8 @@
 				D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */,
 				D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */,
 				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
+				D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */,
+				D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,10 +227,22 @@
 		D77E3B8325BE905E00BC8BB6 /* Main(deleted) */ = {
 			isa = PBXGroup;
 			children = (
+				D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */,
 				D752C9E62595D30E005A4889 /* Main.storyboard */,
 				D752C9E42595D30E005A4889 /* ViewController.swift */,
 			);
 			path = "Main(deleted)";
+			sourceTree = "<group>";
+		};
+		D77E3BA125C0679400BC8BB6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */,
+				D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */,
+				D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */,
+				D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,10 +355,12 @@
 			files = (
 				D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */,
 				D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */,
+				D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */,
 				D752C9ED2595D312005A4889 /* LaunchScreen.storyboard in Resources */,
 				D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */,
 				D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */,
 				D752C9E82595D30E005A4889 /* Main.storyboard in Resources */,
+				D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */,
 				D71373AC25BD455600DBF96B /* MakeScheduleViewController.xib in Resources */,
 				D77E3B8725BE90AC00BC8BB6 /* HomeViewController.xib in Resources */,
 			);
@@ -465,14 +490,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
 				D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */,
 				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
 				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,
 				D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */,
 				D71373A125BBBD4400DBF96B /* TimeZoneCell.swift in Sources */,
 				D752C9E12595D30E005A4889 /* AppDelegate.swift in Sources */,
+				D77E3BA425C067EF00BC8BB6 /* HomeTabViewController.swift in Sources */,
 				D71373AB25BD455600DBF96B /* MakeScheduleViewController.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
+				D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

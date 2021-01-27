@@ -94,6 +94,8 @@ extension InputScheduleViewController: UICollectionViewDelegate{
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！
         let item = collectionView.cellForItem(at: indexPath) as! TimeZoneCell
         scheduleData[indexPath.section][indexPath.row] = selectedStatus
         item.contentView.backgroundColor = selectedStatus.color()
