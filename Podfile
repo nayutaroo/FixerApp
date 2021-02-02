@@ -9,6 +9,7 @@ target 'FixerApp' do
 
   pod 'FSCalendar'
   pod 'CalculateCalendarLogic'
+  pod 'LineSDKSwift', '~> 5.0'
 
   target 'FixerAppTests' do
     inherit! :search_paths

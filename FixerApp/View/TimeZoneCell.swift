@@ -7,11 +7,12 @@
 
 import UIKit
 
-enum TimeZoneStatus{
+enum TimeZoneStatus : Int {
     
  case available
  case undecided
  case unavailable
+ case undefined
     
     func color() -> UIColor {
         switch self {
@@ -21,7 +22,10 @@ enum TimeZoneStatus{
             return .green
         case .unavailable:
             return .blue
+        case .undefined:
+            return .gray
         }
+        
     }
 }
 

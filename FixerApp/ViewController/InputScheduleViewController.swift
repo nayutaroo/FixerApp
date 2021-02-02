@@ -13,7 +13,7 @@ class InputScheduleViewController: UIViewController {
     private var selectedDate: [Date] = []
     private var scheduleData: [[ TimeZoneStatus ]] = [[]]
     
-    @IBOutlet weak var timeZoneColectionView: UICollectionView!{
+    @IBOutlet weak var timeZoneColectionView: UICollectionView! {
         didSet{
             timeZoneColectionView.delegate = self
             timeZoneColectionView.dataSource = self
@@ -24,14 +24,13 @@ class InputScheduleViewController: UIViewController {
     @IBOutlet weak var buttonCross: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
     
         buttonCircle.layer.cornerRadius = 30
         buttonTriangle.layer.cornerRadius = 30
         buttonCross.layer.cornerRadius = 30
         buttonSend.layer.cornerRadius = 10
-        
         self.view.backgroundColor = .gray
         
         let layout = UICollectionViewFlowLayout()
@@ -45,9 +44,11 @@ class InputScheduleViewController: UIViewController {
         timeZoneColectionView.register(UINib(nibName: "TimeZoneCell", bundle: nil), forCellWithReuseIdentifier: "timeZoneCell")
         timeZoneColectionView.register(UINib(nibName: "TimeZoneHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "timeZoneHeader")
     
+        //テストで2月のデータを使用
         let calendar = Calendar(identifier: .gregorian)
-        let date = calendar.date(from: DateComponents(year: 2021, month: 1, day: 1))
-        var dateComponents = calendar.dateComponents([.year,.month,.day], from: date!)
+  
+        let date = calendar.date(from: DateComponents(year: 2021, month: 2, day: 1, hour: 0, minute: 0, second: 0))
+        var dateComponents = calendar.dateComponents([.year,.month,.day,.hour, .minute, .second], from: date!)
         dateComponents.month = 2
         
         for day in 1...28 {
@@ -56,6 +57,8 @@ class InputScheduleViewController: UIViewController {
         }
         
         scheduleData = [[TimeZoneStatus]](repeating: [ TimeZoneStatus ](repeating: .unavailable, count: 8), count: selectedDate.count)
+        
+        scheduleDataInit()
     }
     
     @IBAction func buttonCircleTapped(_ sender: Any) {
@@ -68,11 +71,119 @@ class InputScheduleViewController: UIViewController {
         selectedStatus = .unavailable
     }
     @IBAction func buttonSendtapped(_ sender: Any) {
+        print("json: \n\n\(makeTimezoneJson())")
         navigationController?.popViewController(animated: true)
+    }
+    
+    private func scheduleDataInit(){
+        let jsonstr = """
+        [
+            {"date": "2021-01-31T15:00:00Z","from": 16,"to": 20,"status": 0},
+            {"date": "2021-01-31T15:00:00Z","from": 20,"to": 24,"status": 2},
+            {"date": "2021-02-01T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-02T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-03T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-04T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-05T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-06T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-07T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-08T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-09T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-10T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-11T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-12T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-13T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-14T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-15T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-16T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-17T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-18T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-19T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-20T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-21T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-22T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-23T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-24T15:00:00Z","from": 16,"to": 24,"status": 2},
+            {"date": "2021-02-25T15:00:00Z","from": 16,"to": 24,"status": 0},
+            {"date": "2021-02-26T15:00:00Z","from": 16,"to": 24,"status": 1},
+            {"date": "2021-02-27T15:00:00Z","from": 16,"to": 24,"status": 2},
+        ]
+        """
+            
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        guard let timezones = try? decoder.decode([Timezone].self, from: jsonstr.data(using: .utf8)!) else {
+            print("error")
+            return
+        }
+        
+        //[Timezone]の数だけ繰り返し
+        for timezone in timezones {
+            
+            var i = 0
+            var row = 0
+            
+            //selectedDateから行番号を特定
+            for date in selectedDate{
+                if date.compare(timezone.date) == .orderedSame{
+                    i = row
+                    break
+                }
+                row += 1
+            }
+         
+            //開始時間からの計算を行なってselectedDataの値を決定
+            var j = timezones[i].from - 16 //16時からの調整なので定義しているが後々変更する
+            while j < timezones[i].to - 16 {
+                scheduleData[i][j] = timezones[i].timezoneStatus()
+                j += 1
+            }
+        }
+    }
+    
+    private func makeTimezoneJson() -> String {
+        
+        var timeZonesToMakeJson : [Timezone] = []
+        
+        for i in 0...scheduleData.count - 1 {
+            var previousStatus = TimeZoneStatus.undefined
+            var startRow = 0
+            
+            for j in 0...scheduleData[0].count {
+                if(j == scheduleData[0].count){
+                    let timezone = Timezone(date: selectedDate[i], from: 16+startRow, to: 16+j, status: previousStatus.rawValue)
+                    timeZonesToMakeJson.append(timezone)
+                    break
+                }
+                
+                let status = scheduleData[i][j]
+                if(previousStatus == .undefined || previousStatus == status){
+                }
+                else{
+                    let timezone = Timezone(date: selectedDate[i], from: 16+startRow, to: 16+j, status: previousStatus.rawValue)
+                    timeZonesToMakeJson.append(timezone)
+                    startRow = j
+                }
+                previousStatus = status
+            }
+        }
+        do {
+            //WIP
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .iso8601
+            let data = try encoder.encode(timeZonesToMakeJson)
+            let jsonString = String(data: data, encoding: .utf8)!
+            return jsonString
+        }
+        catch let error {
+            print(error)
+            return ""
+        }
     }
 }
 
-extension InputScheduleViewController: UICollectionViewDelegate{
+extension InputScheduleViewController: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return selectedDate.count
     }
@@ -87,6 +198,7 @@ extension InputScheduleViewController: UICollectionViewDelegate{
         if(kind == "UICollectionElementKindSectionHeader"){
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "timeZoneHeader", for: indexPath) as! TimeZoneHeader
             header.backgroundColor = .gray
+//            print(selectedDate)
             header.dateLabel.text = df.string(from: selectedDate[indexPath.section])
             return header
         }
@@ -95,11 +207,13 @@ extension InputScheduleViewController: UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        //複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！
-        let item = collectionView.cellForItem(at: indexPath) as! TimeZoneCell
-        scheduleData[indexPath.section][indexPath.row] = selectedStatus
-        item.contentView.backgroundColor = selectedStatus.color()
-//       print(indexPath)
+        //(ERC)複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！なんでだろう... 
+        //表示されていないセルが参照されてしまっていることが原因
+        let item = collectionView.cellForItem(at: indexPath) as? TimeZoneCell
+        if let _ = item {
+            scheduleData[indexPath.section][indexPath.row] = selectedStatus
+            item?.contentView.backgroundColor = selectedStatus.color()
+        }
     }
 
     
@@ -109,7 +223,7 @@ extension InputScheduleViewController: UICollectionViewDelegate{
 }
 
 
-extension InputScheduleViewController: UICollectionViewDataSource{
+extension InputScheduleViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
     }

@@ -7,19 +7,21 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    @IBOutlet weak var makeScheduleButton: UIButton!
-    @IBOutlet weak var inputScheduleButton: UIButton!
+final class HomeViewController: UIViewController {
+//    @IBOutlet weak var makeScheduleButton: UIButton!
+//    @IBOutlet weak var inputScheduleButton: UIButton!
+
+    @IBOutlet weak var schedulesTableView: UITableView!{
+        didSet{
+            schedulesTableView.delegate = self
+            schedulesTableView.dataSource = self
+            schedulesTableView.register(SchedulesTableViewCell.nib, forCellReuseIdentifier: SchedulesTableViewCell.identifier)
+//            tableView.refreshControl = UIRefreshControl()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Fixer"
-        navigationController?.navigationBar.titleTextAttributes
-            = [
-                NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 24)!,
-                .foregroundColor: UIColor.white
-            ]
-        navigationController?.navigationBar.backgroundColor = .black
 
         // Do any additional setup after loading the view.
     }
@@ -33,12 +35,35 @@ class HomeViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
+     
     */
-    @IBAction func makeScheduleButtonTapped(_ sender: Any) {
-        navigationController?.pushViewController(MakeScheduleViewController(), animated: true)
-    }
-    @IBAction func makeInputButtonTapped(_ sender: Any) {
+//    @IBAction func makeScheduleButtonTapped(_ sender: Any) {
+//        navigationController?.pushViewController(MakeScheduleViewController(), animated: true)
+//    }
+//    @IBAction func makeInputButtonTapped(_ sender: Any) {
+//        navigationController?.pushViewController(InputScheduleViewController(), animated: true)
+//    }
+    
+}
+
+extension HomeViewController : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(InputScheduleViewController(), animated: true)
+    }
+}
+
+extension HomeViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SchedulesTableViewCell.identifier) as! SchedulesTableViewCell        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LineSDK
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
             window.rootViewController = UINavigationController(rootViewController: HomeTabViewController())
+//            window.rootViewController = UINavigationController(rootViewController: LoginViewController())
             window.makeKeyAndVisible()
     }
 
@@ -52,7 +54,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    //これがなければopen appがきかなくなる
+    // SceneDelegate.swift
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        _ = LoginManager.shared.application(.shared, open: URLContexts.first?.url)
+    }
 }
 
