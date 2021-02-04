@@ -9,6 +9,7 @@ import UIKit
 import FSCalendar
 
 class MakeScheduleViewController: UIViewController {
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var makeButton: UIButton!
     @IBOutlet weak var calendar: FSCalendar!
@@ -27,10 +28,10 @@ class MakeScheduleViewController: UIViewController {
         calendar.register(CalendarCell.self, forCellReuseIdentifier: "calendarCell")
         
         // Do any additional setup after loading the view.
- 
     }
     @IBAction func makeButtonTapped(_ sender: Any) {
-        navigationController?.pushViewController(InputScheduleViewController(), animated: true)
+        present(MadeScheduleViewController(), animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
 
@@ -40,7 +41,6 @@ extension MakeScheduleViewController: FSCalendarDelegate{
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd"
         selectedDate.append(formatter.string(from: date))
-        print(selectedDate)
     }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
@@ -49,9 +49,7 @@ extension MakeScheduleViewController: FSCalendarDelegate{
         formatter.dateFormat = "yyyy/MM/dd"
         let deselectedDate = formatter.string(from: date)
         selectedDate.removeAll(where: {$0 == deselectedDate})
-        print(selectedDate)
     }
-    
 }
 
 extension MakeScheduleViewController: FSCalendarDataSource{

@@ -25,8 +25,14 @@
 		D752CA032595D313005A4889 /* FixerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752CA022595D313005A4889 /* FixerAppUITests.swift */; };
 		D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D330525C27C9400E67DB2 /* LoginViewController.swift */; };
 		D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76D330625C27C9400E67DB2 /* LoginViewController.xib */; };
-		D76D330E25C27CAA00E67DB2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D330C25C27CAA00E67DB2 /* SignupViewController.swift */; };
-		D76D330F25C27CAA00E67DB2 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76D330D25C27CAA00E67DB2 /* SignupViewController.xib */; };
+		D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */; };
+		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
+		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
+		D776BD2525CA993700E92BD4 /* document.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD2425CA993700E92BD4 /* document.png */; };
+		D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */; };
+		D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */; };
+		D776BD3125CAA43F00E92BD4 /* MadeScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */; };
+		D776BD3925CAAC4F00E92BD4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD3825CAAC4F00E92BD4 /* plus.png */; };
 		D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */; };
 		D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */; };
 		D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */; };
@@ -41,8 +47,8 @@
 		D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */; };
 		D7BE6F9925C7D3A500D6E708 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9825C7D3A500D6E708 /* Timezone.swift */; };
 		D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9E25C7D7C500D6E708 /* testdata.json */; };
-		D7BE6FAA25C7E10800D6E708 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7BE6FA925C7E10800D6E708 /* Key.plist */; };
 		D7BE6FAF25C7E18800D6E708 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6FAE25C7E18800D6E708 /* Key.swift */; };
+		D7BE6FCA25C9594B00D6E708 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7BE6FC925C9594A00D6E708 /* Key.plist */; };
 		F0D08FBD85E4D819D6497E7E /* Pods_FixerApp_FixerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8AA7CD7FB6E1A14C5B52F /* Pods_FixerApp_FixerAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,8 +99,14 @@
 		D752CA042595D313005A4889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76D330525C27C9400E67DB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D76D330625C27C9400E67DB2 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		D76D330C25C27CAA00E67DB2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		D76D330D25C27CAA00E67DB2 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneStatus.swift; sourceTree = "<group>"; };
+		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		D776BD2425CA993700E92BD4 /* document.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document.png; sourceTree = "<group>"; };
+		D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeScheduleViewController.swift; sourceTree = "<group>"; };
+		D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MadeScheduleViewController.xib; sourceTree = "<group>"; };
+		D776BD3825CAAC4F00E92BD4 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputScheduleViewController.swift; sourceTree = "<group>"; };
 		D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputScheduleViewController.xib; sourceTree = "<group>"; };
 		D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +121,8 @@
 		D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		D7BE6F9825C7D3A500D6E708 /* Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timezone.swift; sourceTree = "<group>"; };
 		D7BE6F9E25C7D7C500D6E708 /* testdata.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; tabWidth = 2; };
-		D7BE6FA925C7E10800D6E708 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
 		D7BE6FAE25C7E18800D6E708 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		D7BE6FC925C9594A00D6E708 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
 		E95265B8F340D9CA29C5748A /* Pods-FixerApp-FixerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerApp-FixerAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FixerApp-FixerAppUITests/Pods-FixerApp-FixerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FFA8AA7CD7FB6E1A14C5B52F /* Pods_FixerApp_FixerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FixerApp_FixerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,6 +183,10 @@
 			children = (
 				D77E3B8325BE905E00BC8BB6 /* Main(deleted) */,
 				D77E3BA125C0679400BC8BB6 /* Home */,
+				D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */,
+				D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */,
+				D76D330525C27C9400E67DB2 /* LoginViewController.swift */,
+				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
 				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
 				D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */,
 				D71373A925BD455500DBF96B /* MakeScheduleViewController.swift */,
@@ -219,6 +235,7 @@
 		D752C9DF2595D30E005A4889 /* FixerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D776BD0125CA965E00E92BD4 /* Image */,
 				D7BE6F9D25C7D7A500D6E708 /* TestData */,
 				D7BE6F9725C7D37400D6E708 /* Model */,
 				D71373B025BD455D00DBF96B /* ViewController */,
@@ -230,7 +247,7 @@
 				D752C9EB2595D312005A4889 /* LaunchScreen.storyboard */,
 				D752C9EE2595D312005A4889 /* Info.plist */,
 				D7BE6F9E25C7D7C500D6E708 /* testdata.json */,
-				D7BE6FA925C7E10800D6E708 /* Key.plist */,
+				D7BE6FC925C9594A00D6E708 /* Key.plist */,
 			);
 			path = FixerApp;
 			sourceTree = "<group>";
@@ -253,6 +270,17 @@
 			path = FixerAppUITests;
 			sourceTree = "<group>";
 		};
+		D776BD0125CA965E00E92BD4 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D776BD1A25CA992500E92BD4 /* check.png */,
+				D776BD1F25CA993000E92BD4 /* file.png */,
+				D776BD2425CA993700E92BD4 /* document.png */,
+				D776BD3825CAAC4F00E92BD4 /* plus.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		D77E3B8325BE905E00BC8BB6 /* Main(deleted) */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,10 +298,6 @@
 				D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */,
 				D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */,
 				D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */,
-				D76D330525C27C9400E67DB2 /* LoginViewController.swift */,
-				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
-				D76D330C25C27CAA00E67DB2 /* SignupViewController.swift */,
-				D76D330D25C27CAA00E67DB2 /* SignupViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */,
+				D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -291,6 +316,7 @@
 			children = (
 				D7BE6F9825C7D3A500D6E708 /* Timezone.swift */,
 				D7BE6FAE25C7E18800D6E708 /* Key.swift */,
+				D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,7 +436,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BE6FAA25C7E10800D6E708 /* Key.plist in Resources */,
 				D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */,
 				D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */,
 				D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */,
@@ -418,11 +443,16 @@
 				D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */,
 				D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */,
 				D77E3BB525C0FBD500BC8BB6 /* SchedulesTableViewCell.xib in Resources */,
-				D76D330F25C27CAA00E67DB2 /* SignupViewController.xib in Resources */,
 				D752C9E82595D30E005A4889 /* Main.storyboard in Resources */,
 				D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */,
+				D7BE6FCA25C9594B00D6E708 /* Key.plist in Resources */,
+				D776BD3925CAAC4F00E92BD4 /* plus.png in Resources */,
+				D776BD1B25CA992500E92BD4 /* check.png in Resources */,
+				D776BD2025CA993000E92BD4 /* file.png in Resources */,
+				D776BD2525CA993700E92BD4 /* document.png in Resources */,
 				D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */,
 				D71373AC25BD455600DBF96B /* MakeScheduleViewController.xib in Resources */,
+				D776BD3125CAA43F00E92BD4 /* MadeScheduleViewController.xib in Resources */,
 				D77E3B8725BE90AC00BC8BB6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,11 +581,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */,
 				D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */,
 				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
 				D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */,
 				D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */,
 				D7BE6F9925C7D3A500D6E708 /* Timezone.swift in Sources */,
+				D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */,
 				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
 				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,
 				D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */,
@@ -565,8 +597,8 @@
 				D7BE6FAF25C7E18800D6E708 /* Key.swift in Sources */,
 				D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */,
 				D71373AB25BD455600DBF96B /* MakeScheduleViewController.swift in Sources */,
+				D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
-				D76D330E25C27CAA00E67DB2 /* SignupViewController.swift in Sources */,
 				D77E3BB425C0FBD500BC8BB6 /* SchedulesTableViewCell.swift in Sources */,
 				D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */,
 			);

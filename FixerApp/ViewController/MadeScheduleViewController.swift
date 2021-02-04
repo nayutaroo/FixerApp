@@ -1,21 +1,25 @@
 //
-//  SignupViewController.swift
+//  MadeScheduleViewController.swift
 //  FixerApp
 //
-//  Created by 化田晃平 on R 3/01/28.
+//  Created by 化田晃平 on R 3/02/03.
 //
 
 import UIKit
 
-class SignupViewController: UIViewController {
-
+class MadeScheduleViewController: UIViewController {
+    @IBOutlet weak var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

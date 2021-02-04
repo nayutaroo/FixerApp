@@ -7,28 +7,6 @@
 
 import UIKit
 
-enum TimeZoneStatus : Int {
-    
- case available
- case undecided
- case unavailable
- case undefined
-    
-    func color() -> UIColor {
-        switch self {
-        case .available:
-            return .red
-        case .undecided:
-            return .green
-        case .unavailable:
-            return .blue
-        case .undefined:
-            return .gray
-        }
-        
-    }
-}
-
 class TimeZoneCell: UICollectionViewCell {
     @IBOutlet weak var timezoneLabel: UILabel!
     var status: TimeZoneStatus = .unavailable

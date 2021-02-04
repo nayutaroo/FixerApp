@@ -8,16 +8,24 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-//    @IBOutlet weak var makeScheduleButton: UIButton!
-//    @IBOutlet weak var inputScheduleButton: UIButton!
 
     @IBOutlet weak var schedulesTableView: UITableView!{
         didSet{
             schedulesTableView.delegate = self
             schedulesTableView.dataSource = self
             schedulesTableView.register(SchedulesTableViewCell.nib, forCellReuseIdentifier: SchedulesTableViewCell.identifier)
-//            tableView.refreshControl = UIRefreshControl()
         }
+    }
+    
+    private var jsonString: String?
+    
+    init(jsonString: String?){
+        self.jsonString = jsonString
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -25,8 +33,6 @@ final class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-
     /*
     // MARK: - Navigation
 
@@ -48,7 +54,8 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(InputScheduleViewController(), animated: true)
+//        let cell = tableView.cellForRow(at: indexPath) as! SchedulesTableViewCell
+        navigationController?.pushViewController(InputScheduleViewController(jsonString: jsonString), animated: true)
     }
 }
 
