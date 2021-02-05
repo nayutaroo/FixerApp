@@ -45,7 +45,7 @@
 		D77E3BB425C0FBD500BC8BB6 /* SchedulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BB225C0FBD500BC8BB6 /* SchedulesTableViewCell.swift */; };
 		D77E3BB525C0FBD500BC8BB6 /* SchedulesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3BB325C0FBD500BC8BB6 /* SchedulesTableViewCell.xib */; };
 		D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */; };
-		D7BE6F9925C7D3A500D6E708 /* Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9825C7D3A500D6E708 /* Timezone.swift */; };
+		D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9825C7D3A500D6E708 /* Schedule.swift */; };
 		D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9E25C7D7C500D6E708 /* testdata.json */; };
 		D7BE6FAF25C7E18800D6E708 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6FAE25C7E18800D6E708 /* Key.swift */; };
 		D7BE6FCA25C9594B00D6E708 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7BE6FC925C9594A00D6E708 /* Key.plist */; };
@@ -119,7 +119,7 @@
 		D77E3BB225C0FBD500BC8BB6 /* SchedulesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesTableViewCell.swift; sourceTree = "<group>"; };
 		D77E3BB325C0FBD500BC8BB6 /* SchedulesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchedulesTableViewCell.xib; sourceTree = "<group>"; };
 		D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
-		D7BE6F9825C7D3A500D6E708 /* Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timezone.swift; sourceTree = "<group>"; };
+		D7BE6F9825C7D3A500D6E708 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		D7BE6F9E25C7D7C500D6E708 /* testdata.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; tabWidth = 2; };
 		D7BE6FAE25C7E18800D6E708 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		D7BE6FC925C9594A00D6E708 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
@@ -314,9 +314,9 @@
 		D7BE6F9725C7D37400D6E708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D7BE6F9825C7D3A500D6E708 /* Timezone.swift */,
-				D7BE6FAE25C7E18800D6E708 /* Key.swift */,
+				D7BE6F9825C7D3A500D6E708 /* Schedule.swift */,
 				D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */,
+				D7BE6FAE25C7E18800D6E708 /* Key.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -586,7 +586,7 @@
 				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
 				D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */,
 				D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */,
-				D7BE6F9925C7D3A500D6E708 /* Timezone.swift in Sources */,
+				D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */,
 				D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */,
 				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
 				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,

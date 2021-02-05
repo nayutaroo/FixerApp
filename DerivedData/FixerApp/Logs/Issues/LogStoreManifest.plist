@@ -34,34 +34,6 @@
 			<key>uniqueIdentifier</key>
 			<string>17FCE086-8B4B-47B1-8379-239A70834C7A</string>
 		</dict>
-		<key>4D5A1E4F-A45F-4CFF-89B6-E7B94B8B7119</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>4D5A1E4F-A45F-4CFF-89B6-E7B94B8B7119.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>FSCalendar-bzvwvhzukxljoyfgwtzmckmbofxx</string>
-			<key>timeStartedRecording</key>
-			<real>634137846.39930296</real>
-			<key>timeStoppedRecording</key>
-			<real>634137846.39961004</real>
-			<key>title</key>
-			<string>Build target FSCalendar</string>
-			<key>uniqueIdentifier</key>
-			<string>4D5A1E4F-A45F-4CFF-89B6-E7B94B8B7119</string>
-		</dict>
 		<key>621C9713-0BB1-4992-BDB4-5AC549037342</key>
 		<dict>
 			<key>className</key>
@@ -118,7 +90,35 @@
 			<key>uniqueIdentifier</key>
 			<string>6B08CB55-903C-4EC8-8947-58A8BD967022</string>
 		</dict>
-		<key>8E5234CF-AF53-4175-8959-51F1327CD319</key>
+		<key>A81C6C6B-9A18-448F-A419-D717751CBA4B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>A81C6C6B-9A18-448F-A419-D717751CBA4B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>FSCalendar-bzvwvhzukxljoyfgwtzmckmbofxx</string>
+			<key>timeStartedRecording</key>
+			<real>634199729.49026501</real>
+			<key>timeStoppedRecording</key>
+			<real>634199729.49053097</real>
+			<key>title</key>
+			<string>Build target FSCalendar</string>
+			<key>uniqueIdentifier</key>
+			<string>A81C6C6B-9A18-448F-A419-D717751CBA4B</string>
+		</dict>
+		<key>BA4604A5-64A6-4808-9629-26E6236BC91C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -127,7 +127,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>8E5234CF-AF53-4175-8959-51F1327CD319.xcactivitylog</string>
+			<string>BA4604A5-64A6-4808-9629-26E6236BC91C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -138,13 +138,13 @@
 			<key>signature</key>
 			<string>FixerApp-dhfjqiurjssqfudltkeozqdtkrcv</string>
 			<key>timeStartedRecording</key>
-			<real>634137841.616956</real>
+			<real>634199725.91102803</real>
 			<key>timeStoppedRecording</key>
-			<real>634137846.39461696</real>
+			<real>634199729.485497</real>
 			<key>title</key>
 			<string>Build target FixerApp</string>
 			<key>uniqueIdentifier</key>
-			<string>8E5234CF-AF53-4175-8959-51F1327CD319</string>
+			<string>BA4604A5-64A6-4808-9629-26E6236BC91C</string>
 		</dict>
 		<key>C329AB96-906C-4C57-ACED-BC0E72128959</key>
 		<dict>

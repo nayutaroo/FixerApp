@@ -1162,6 +1162,40 @@
 			<key>uniqueIdentifier</key>
 			<string>7C70DE65-7234-456A-AD6E-B87FC2662A27</string>
 		</dict>
+		<key>813D0CE6-FDA0-4D8B-87CB-4B16664408D9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>813D0CE6-FDA0-4D8B-87CB-4B16664408D9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>634199725.49791002</real>
+			<key>timeStoppedRecording</key>
+			<real>634199729.51000595</real>
+			<key>title</key>
+			<string>Build FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>813D0CE6-FDA0-4D8B-87CB-4B16664408D9</string>
+		</dict>
 		<key>85F4239F-9FC8-4DE2-9444-F7E48CF17D53</key>
 		<dict>
 			<key>className</key>
@@ -2419,6 +2453,40 @@
 			<string>Build FixerApp</string>
 			<key>uniqueIdentifier</key>
 			<string>FC3783F1-AF13-4E56-8E02-8C98C04128BA</string>
+		</dict>
+		<key>FD64C840-BEE0-490C-BE72-D5D5BA4ECC4D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FD64C840-BEE0-490C-BE72-D5D5BA4ECC4D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>634199679.39161897</real>
+			<key>timeStoppedRecording</key>
+			<real>634199687.04885399</real>
+			<key>title</key>
+			<string>Build FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>FD64C840-BEE0-490C-BE72-D5D5BA4ECC4D</string>
 		</dict>
 		<key>FF8493A1-CA1D-409E-A0AF-EBF5A8A442E6</key>
 		<dict>

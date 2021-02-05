@@ -1366,6 +1366,40 @@
 			<key>uniqueIdentifier</key>
 			<string>95C8A9CC-B98B-48F4-A98C-F95A55797017</string>
 		</dict>
+		<key>95CA86D3-17FE-4525-A3F4-8B9CE56737FE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>95CA86D3-17FE-4525-A3F4-8B9CE56737FE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>634199687.14002597</real>
+			<key>timeStoppedRecording</key>
+			<real>634199725.58512604</real>
+			<key>title</key>
+			<string>Run FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>95CA86D3-17FE-4525-A3F4-8B9CE56737FE</string>
+		</dict>
 		<key>982EF637-5DE3-41AC-8D2C-C7DEDE0252DA</key>
 		<dict>
 			<key>className</key>
