@@ -77,20 +77,6 @@ class HomeTabViewController: UITabBarController {
         let vcList: [UIViewController] = [ homeVC, homeVC2, homeVC3 ]
         setViewControllers(vcList, animated: true)
         
-        
-//        // LINE ログインプロフィールの取得
-//        API.getProfile { result in
-//            switch result {
-//            case .success(let profile):
-//                print("User ID: \(profile.userID)")
-//                print("User Display Name: \(profile.displayName)")
-//                print("User Status Message: \(profile.statusMessage)")
-//                print("User Icon: \(String(describing: profile.pictureURL))")
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
-        
         // Do any additional setup after loading the view.
     }
     
