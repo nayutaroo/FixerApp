@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>E7C03A31-9B4D-426E-9DD4-D12AC8EC1238</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E7C03A31-9B4D-426E-9DD4-D12AC8EC1238.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>634387377.10831904</real>
+			<key>timeStoppedRecording</key>
+			<real>634393250.91372299</real>
+			<key>title</key>
+			<string>Run FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>E7C03A31-9B4D-426E-9DD4-D12AC8EC1238</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

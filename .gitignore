@@ -1,0 +1,16 @@
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+xcworkspace
+project.xcworkspace
+*.xcodeproj/xcuserdata/*
+*.xcodeproj/xcuserdata/
+.DS_Store
+*.xcworkspace/xcuserdata/*
+xcuserdata
+/Pods/*
+/DerivedData
+/FixerApp/Key.plist
+
+# Bundler
+.bundle/
+vendor/
+

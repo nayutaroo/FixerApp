@@ -1,0 +1,26 @@
+PODS:
+  - CalculateCalendarLogic (0.4.0)
+  - FSCalendar (2.8.2)
+  - LineSDKSwift (5.7.0):
+    - LineSDKSwift/Core (= 5.7.0)
+  - LineSDKSwift/Core (5.7.0)
+
+DEPENDENCIES:
+  - CalculateCalendarLogic
+  - FSCalendar
+  - LineSDKSwift (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - CalculateCalendarLogic
+    - FSCalendar
+    - LineSDKSwift
+
+SPEC CHECKSUMS:
+  CalculateCalendarLogic: 84d3aff9456340ff07f7b77242a57b5d2f0ed631
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  LineSDKSwift: f9c232f89185b887b5725aa278325f3a23e33bbc
+
+PODFILE CHECKSUM: 65c6e35da4038ded2b6d47e2de4e0836b37b9a9e
+
+COCOAPODS: 1.10.0
