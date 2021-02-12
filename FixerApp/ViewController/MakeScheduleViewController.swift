@@ -13,7 +13,7 @@ class MakeScheduleViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var makeButton: UIButton!
     @IBOutlet weak var calendar: FSCalendar!
-    private var selectedDate: [String] = []
+    private var selectedDate: [Date] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,24 +31,38 @@ class MakeScheduleViewController: UIViewController {
     }
     @IBAction func makeButtonTapped(_ sender: Any) {
         present(MadeScheduleViewController(), animated: true)
+        makeEventJsonString()
         navigationController?.popViewController(animated: true)
+    }
+    
+    private func makeEventJsonString(){
+//        struct Event : Decodable {
+//            let id: Int
+//            let name: String
+//            let makerId: String                     // LINEのID次第でIntかStringかが変わる
+//            let enteredUsers: [User]
+//            let unenteredUsers: [User]
+//            let timezones: [Timezone]               // スケジュールの入力する日程（時間帯）の範囲
+//            let deadline: Date                      // 〆切日
+//            let possibleTimezones: [Timezone]       // 候補時間帯 16日 13時〜17時, 17日 18時〜19時
+//            let isDecided: Bool                     // 確定されてるかどうか
+//            let decidedTimezone: Timezone?          // 確定した時間帯
+//        }
+
+        name = 
+        
     }
 }
 
 extension MakeScheduleViewController: FSCalendarDelegate{
     func calendar(_ calender: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        //表示する形式をformatterで指定
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
-        selectedDate.append(formatter.string(from: date))
+        selectedDate.append(date)
+        print(selectedDate)
     }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        //表示する形式をformatterで指定
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
-        let deselectedDate = formatter.string(from: date)
-        selectedDate.removeAll(where: {$0 == deselectedDate})
+        selectedDate.removeAll(where: {$0 == date})
+        print(selectedDate)
     }
 }
 
