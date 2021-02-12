@@ -80,6 +80,7 @@ class InputScheduleViewController: UIViewController {
     @IBAction func buttonCrossTapped(_ sender: Any) {
         selectedStatus = .unavailable
     }
+    
     @IBAction func buttonSendtapped(_ sender: Any) {
         print("json: \n\n\(makeTimezoneJson())")
         navigationController?.popViewController(animated: true)
@@ -100,12 +101,10 @@ class InputScheduleViewController: UIViewController {
         }
         
         //[Timezone]の数だけ繰り返し
-        
         var index = 0
         for timezone in timezones {
           
             var i = 0
-            
             //selectedDateから行番号を特定
             for date in selectedDate{
                 if date.compare(timezone.date) == .orderedSame{
@@ -192,23 +191,27 @@ extension InputScheduleViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        //(ERC)複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！なんでだろう... 
+        //複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！なんでだろう...
         //表示されていないセルが参照されてしまっていることが原因
+//        print("didSelectItemAt \(indexPath)")
+//        let item = collectionView.cellForItem(at: indexPath) as? TimeZoneCell
+//        if let _ = item {
+//            scheduleData[indexPath.section][indexPath.row] = selectedStatus
+//            DispatchQueue.main.async{
+//                item?.contentView.backgroundColor = self.selectedStatus.color()
+//            }
+//        }
+        print("didSelectItemAt \(indexPath)")
         let item = collectionView.cellForItem(at: indexPath) as? TimeZoneCell
-        if let _ = item {
-            scheduleData[indexPath.section][indexPath.row] = selectedStatus
+        if let item = item {
             DispatchQueue.main.async{
-                item?.contentView.backgroundColor = self.selectedStatus.color()
+                self.scheduleData[indexPath.section][indexPath.row] = self.selectedStatus
+                item.contentView.backgroundColor = self.selectedStatus.color()
+//                item.isSelected = false
             }
         }
     }
-
-    
-    func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
-        return true
-    }
 }
-
 
 extension InputScheduleViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -226,6 +229,8 @@ extension InputScheduleViewController: UICollectionViewDataSource {
             cell.layer.cornerRadius = 5
         }
         return cell
+        
+        
     }
 }
 

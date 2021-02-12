@@ -26,10 +26,6 @@ final class HomeViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-//    init(schedules: [ScheduleProtocol]) {
-//        self.schedules = schedules
-//        super.init(nibName: nil, bundle: nil)
-//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -51,10 +47,6 @@ extension HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         5
     }
-    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        schedules.count
-//    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SchedulesTableViewCell.identifier) as! SchedulesTableViewCell        

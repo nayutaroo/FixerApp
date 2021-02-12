@@ -33,6 +33,8 @@
 		D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */; };
 		D776BD3125CAA43F00E92BD4 /* MadeScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */; };
 		D776BD3925CAAC4F00E92BD4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD3825CAAC4F00E92BD4 /* plus.png */; };
+		D776BD4B25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */; };
+		D776BD5025CD92B900E92BD4 /* SwipeSelectingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD4F25CD92B900E92BD4 /* SwipeSelectingCollectionView.swift */; };
 		D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */; };
 		D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */; };
 		D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */; };
@@ -107,6 +109,8 @@
 		D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeScheduleViewController.swift; sourceTree = "<group>"; };
 		D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MadeScheduleViewController.xib; sourceTree = "<group>"; };
 		D776BD3825CAAC4F00E92BD4 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSelectingGestureRecognizer.swift; sourceTree = "<group>"; };
+		D776BD4F25CD92B900E92BD4 /* SwipeSelectingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeSelectingCollectionView.swift; sourceTree = "<group>"; };
 		D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputScheduleViewController.swift; sourceTree = "<group>"; };
 		D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputScheduleViewController.xib; sourceTree = "<group>"; };
 		D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		D71373B925BD480000DBF96B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D776BD4F25CD92B900E92BD4 /* SwipeSelectingCollectionView.swift */,
 				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
 				D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */,
 				D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */,
@@ -307,6 +312,7 @@
 			children = (
 				D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */,
 				D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */,
+				D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -581,6 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D776BD5025CD92B900E92BD4 /* SwipeSelectingCollectionView.swift in Sources */,
+				D776BD4B25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift in Sources */,
 				D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */,
 				D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */,
 				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
