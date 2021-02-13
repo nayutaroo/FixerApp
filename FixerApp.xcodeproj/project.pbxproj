@@ -25,6 +25,8 @@
 		D752CA032595D313005A4889 /* FixerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752CA022595D313005A4889 /* FixerAppUITests.swift */; };
 		D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76D330525C27C9400E67DB2 /* LoginViewController.swift */; };
 		D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76D330625C27C9400E67DB2 /* LoginViewController.xib */; };
+		D770604625D7872D00E08916 /* didInputScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770604425D7872D00E08916 /* didInputScheduleViewController.swift */; };
+		D770604725D7872D00E08916 /* didInputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770604525D7872D00E08916 /* didInputScheduleViewController.xib */; };
 		D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */; };
 		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
 		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
@@ -101,6 +103,8 @@
 		D752CA042595D313005A4889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76D330525C27C9400E67DB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D76D330625C27C9400E67DB2 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D770604425D7872D00E08916 /* didInputScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didInputScheduleViewController.swift; sourceTree = "<group>"; };
+		D770604525D7872D00E08916 /* didInputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = didInputScheduleViewController.xib; sourceTree = "<group>"; };
 		D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneStatus.swift; sourceTree = "<group>"; };
 		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				D77E3BA125C0679400BC8BB6 /* Home */,
 				D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */,
 				D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */,
+				D770604425D7872D00E08916 /* didInputScheduleViewController.swift */,
+				D770604525D7872D00E08916 /* didInputScheduleViewController.xib */,
 				D76D330525C27C9400E67DB2 /* LoginViewController.swift */,
 				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
 				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
@@ -442,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770604725D7872D00E08916 /* didInputScheduleViewController.xib in Resources */,
 				D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */,
 				D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */,
 				D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */,
@@ -607,6 +614,7 @@
 				D71373AB25BD455600DBF96B /* MakeScheduleViewController.swift in Sources */,
 				D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
+				D770604625D7872D00E08916 /* didInputScheduleViewController.swift in Sources */,
 				D77E3BB425C0FBD500BC8BB6 /* SchedulesTableViewCell.swift in Sources */,
 				D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */,
 			);

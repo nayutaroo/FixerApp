@@ -49,12 +49,16 @@ class MakeScheduleViewController: UIViewController {
         startTimeRow = timeZonePickerView.selectedRow(inComponent: 0)
         endTimeRow = timeZonePickerView.selectedRow(inComponent: 1)
         
-        guard startTimeRow < endTimeRow else {
-            print("時間設定エラー")
+        let result = makeScheduleJsonString()
+        switch result {
+        case .success(let jsonStr):
+            print(jsonStr)
+        case .failure(let error):
+            print(error)
+            showAlert(with: error)
             return
         }
         
-        makeScheduleJsonString()
         
         // -- Do --  APIサーバへPOST処理
         
@@ -63,24 +67,35 @@ class MakeScheduleViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    private func makeScheduleJsonString() {
-        //[timezone]を作る
+    private func makeScheduleJsonString() -> Result<String,Error> {
+        
+        guard let eventName = eventNameTextfField.text, eventName != "" else {
+            return .failure(NSError(domain: "イベント名が未入力です", code: -1, userInfo: nil))
+        }
+        
+        guard selectedDate.count > 0 else {
+            return .failure(NSError(domain: "日程の選択をしてください", code: -1, userInfo: nil))
+        }
+        
+        
+        guard startTimeRow < endTimeRow else {
+            return .failure(NSError(domain: "時間帯の設定が不適切です", code: -1, userInfo: nil))
+        }
+    
+        guard let userID =  UserDefaults.standard.object(forKey: "userID") as? String,
+              let userName = UserDefaults.standard.object(forKey: "userName") as? String,
+              let userImageUrlString = UserDefaults.standard.object(forKey: "userImageUrl") as? String
+        else {
+            return .failure(NSError(domain: "ユーザーデータを取得できません", code: -1, userInfo: nil))
+        }
         
         var timezones: [Timezone] = []
         for date in selectedDate {
             timezones.append(Timezone(date: date, from: startTimeRow, to: endTimeRow, status: 0))
         }
         
-        guard let userID =  UserDefaults.standard.object(forKey: "userID") as? String,
-              let userName = UserDefaults.standard.object(forKey: "userName") as? String,
-              let userImageUrlString = UserDefaults.standard.object(forKey: "userImageUrl") as? String
-        else { return }
-        
         let userImageURL = URL(string: userImageUrlString)
-        
         let user = User(id: userID, name: userName, imageURL: userImageURL)
-        guard let eventName = eventNameTextfField.text else { return }
-        
         let event = Event(id: 0, name: eventName, makerId: userID, enteredUsers: [], unenteredUsers: [user], timezones: timezones, deadline: deadlineDatePicker.date, possibleTimezones: [], isDecided: false, decidedTimezone: nil)
         
         do {
@@ -89,24 +104,17 @@ class MakeScheduleViewController: UIViewController {
             encoder.dateEncodingStrategy = .iso8601
             let data = try encoder.encode(event)
             let jsonString = String(data: data, encoding: .utf8)!
-            print(jsonString)
+            return .success(jsonString)
         }
         catch let error {
-            print(error)
-            return
+            return .failure(error)
         }
-        
-//        struct Event : Decodable {
-//            let id: Int
-//            let name: String
-//            let makerId: String                     // LINEのID次第でIntかStringかが変わる
-//            let enteredUsers: [User]
-//            let unenteredUsers: [User]
-//            let timezones: [Timezone]               // スケジュールの入力する日程（時間帯）の範囲
-//            let deadline: Date                      // 〆切日
-//            let possibleTimezones: [Timezone]       // 候補時間帯 16日 13時〜17時, 17日 18時〜19時
-//            let isDecided: Bool                     // 確定されてるかどうか
-//            let decidedTimezone: Timezone?          // 確定した時間帯
+    }
+    
+    private func showAlert(with error: Error) {
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }
 

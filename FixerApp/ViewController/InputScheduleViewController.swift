@@ -83,10 +83,11 @@ class InputScheduleViewController: UIViewController {
     
     @IBAction func buttonSendtapped(_ sender: Any) {
         print("json: \n\n\(makeTimezoneJson())")
+        present(didInputScheduleViewController(), animated: true)
         navigationController?.popViewController(animated: true)
     }
     
-    private func scheduleDataInit(){
+    private func scheduleDataInit() {
         
         guard let jsonString = jsonString else {
             return
