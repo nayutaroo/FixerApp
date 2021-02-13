@@ -22,7 +22,7 @@ import Foundation
 
 //イベント(Event)
 
-struct Event : Decodable {
+struct Event : Codable {
     let id: Int
     let name: String
     let makerId: String                     // LINEのID次第でIntかStringかが変わる
@@ -36,10 +36,16 @@ struct Event : Decodable {
 }
 
 //ユーザ
-struct User: Decodable {
+struct User: Codable {
     let id: String
     let name: String
     let imageURL: URL?
+    
+//    init(id: String, name: String, imageURL : URL?) {
+//        self.id = id
+//        self.name = name
+//        self.imageURL = imageURL
+//    }
 }
 
 //ユーザごとのタイムゾーン

@@ -36,6 +36,23 @@ extension LoginViewController: LoginButtonDelegate {
     func loginButton(_ button: LoginButton, didSucceedLogin loginResult: LoginResult) {
 //        hideIndicator()
         print("Login Succeeded.")
+        // LINE ログインプロフィールの取得
+        API.getProfile { result in
+            switch result {
+            case .success(let profile):
+//                print("User ID: \(profile.userID)")
+//                print("User Display Name: \(profile.displayName)")
+//                print("User Status Message: \(profile.statusMessage)")
+//                print("User Icon: \(String(describing: profile.pictureURL))")
+                
+                UserDefaults.standard.setValue(profile.userID, forKey: "userID")
+                UserDefaults.standard.setValue(profile.displayName, forKey: "userName")
+                UserDefaults.standard.setValue(String(describing: profile.pictureURL), forKey: "userImageUrl")
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
         navigationController?.pushViewController(HomeTabViewController(), animated: true)
     }
     

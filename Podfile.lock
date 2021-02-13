@@ -4,23 +4,37 @@ PODS:
   - LineSDKSwift (5.7.0):
     - LineSDKSwift/Core (= 5.7.0)
   - LineSDKSwift/Core (5.7.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
 
 DEPENDENCIES:
   - CalculateCalendarLogic
   - FSCalendar
   - LineSDKSwift (~> 5.0)
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - CalculateCalendarLogic
     - FSCalendar
     - LineSDKSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
   CalculateCalendarLogic: 84d3aff9456340ff07f7b77242a57b5d2f0ed631
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   LineSDKSwift: f9c232f89185b887b5725aa278325f3a23e33bbc
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: 65c6e35da4038ded2b6d47e2de4e0836b37b9a9e
+PODFILE CHECKSUM: 699acf5bfd9d09ba74d773f16a140c35098ad328
 
 COCOAPODS: 1.10.0
