@@ -20,6 +20,7 @@ class InputScheduleViewController: UIViewController {
             timeZoneColectionView.dataSource = self
         }
     }
+    
     @IBOutlet weak var buttonCircle: UIButton!
     @IBOutlet weak var buttonTriangle: UIButton!
     @IBOutlet weak var buttonCross: UIButton!
@@ -107,8 +108,8 @@ class InputScheduleViewController: UIViewController {
           
             var i = 0
             //selectedDateから行番号を特定
-            for date in selectedDate{
-                if date.compare(timezone.date) == .orderedSame{
+            for date in selectedDate {
+                if date.compare(timezone.date) == .orderedSame {
                     break
                 }
                 i += 1
@@ -120,7 +121,6 @@ class InputScheduleViewController: UIViewController {
                 scheduleData[i][j] = timezones[index].timezoneStatus()
                 j += 1
             }
-            
             index += 1
         }
     }
@@ -134,16 +134,16 @@ class InputScheduleViewController: UIViewController {
             var startRow = 0
             
             for j in 0...scheduleData[0].count {
-                if(j == scheduleData[0].count){
+                if(j == scheduleData[0].count) {
                     let timezone = Timezone(date: selectedDate[i], from: 16+startRow, to: 16+j, status: previousStatus.rawValue)
                     timeZonesToMakeJson.append(timezone)
                     break
                 }
                 
                 let status = scheduleData[i][j]
-                if(previousStatus == .undefined || previousStatus == status){
+                if(previousStatus == .undefined || previousStatus == status) {
                 }
-                else{
+                else {
                     let timezone = Timezone(date: selectedDate[i], from: 16+startRow, to: 16+j, status: previousStatus.rawValue)
                     timeZonesToMakeJson.append(timezone)
                     startRow = j
@@ -178,10 +178,10 @@ extension InputScheduleViewController: UICollectionViewDelegate {
         let df = DateFormatter()
         df.dateFormat = "yyyy年MM月dd日"
 
-        if(kind == "UICollectionElementKindSectionHeader"){
+        if(kind == "UICollectionElementKindSectionHeader") {
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "timeZoneHeader", for: indexPath) as! TimeZoneHeader
             
-            DispatchQueue.main.async{
+            DispatchQueue.main.async {
                 header.backgroundColor = .gray
                 header.dateLabel.text = df.string(from: self.selectedDate[indexPath.section])
             }
@@ -192,23 +192,11 @@ extension InputScheduleViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        //複数選択が2回目以降nilで帰ってきてしまうのでエラーがおこる！なんでだろう...
-        //表示されていないセルが参照されてしまっていることが原因
-//        print("didSelectItemAt \(indexPath)")
-//        let item = collectionView.cellForItem(at: indexPath) as? TimeZoneCell
-//        if let _ = item {
-//            scheduleData[indexPath.section][indexPath.row] = selectedStatus
-//            DispatchQueue.main.async{
-//                item?.contentView.backgroundColor = self.selectedStatus.color()
-//            }
-//        }
-        print("didSelectItemAt \(indexPath)")
         let item = collectionView.cellForItem(at: indexPath) as? TimeZoneCell
         if let item = item {
-            DispatchQueue.main.async{
+            DispatchQueue.main.async {
                 self.scheduleData[indexPath.section][indexPath.row] = self.selectedStatus
                 item.contentView.backgroundColor = self.selectedStatus.color()
-//                item.isSelected = false
             }
         }
     }
@@ -224,14 +212,12 @@ extension InputScheduleViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "timeZoneCell", for: indexPath) as! TimeZoneCell
         let timezoneStatus = scheduleData[indexPath.section][indexPath.row]
         
-        DispatchQueue.main.async{
+        DispatchQueue.main.async {
             cell.contentView.backgroundColor = timezoneStatus.color()
             cell.timezoneLabel.text = timezones[indexPath.row]
             cell.layer.cornerRadius = 5
         }
         return cell
-        
-        
     }
 }
 

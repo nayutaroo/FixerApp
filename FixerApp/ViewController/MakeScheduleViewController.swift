@@ -17,6 +17,7 @@ class MakeScheduleViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var makeButton: UIButton!
     @IBOutlet weak var calendar: FSCalendar!
+  
     @IBOutlet weak var timeZonePickerView: UIPickerView!{
         didSet{
             timeZonePickerView.dataSource = self
@@ -64,6 +65,7 @@ class MakeScheduleViewController: UIViewController {
         
         
         present(MadeScheduleViewController(), animated: true)
+        makeEventJsonString()
         navigationController?.popViewController(animated: true)
     }
     
