@@ -50,7 +50,7 @@ class MakeScheduleViewController: UIViewController {
         startTimeRow = timeZonePickerView.selectedRow(inComponent: 0)
         endTimeRow = timeZonePickerView.selectedRow(inComponent: 1)
         
-        let result = makeScheduleJsonString()
+        let result = makeEventJsonString()
         switch result {
         case .success(let jsonStr):
             print(jsonStr)
@@ -65,11 +65,10 @@ class MakeScheduleViewController: UIViewController {
         
         
         present(MadeScheduleViewController(), animated: true)
-        makeEventJsonString()
         navigationController?.popViewController(animated: true)
     }
     
-    private func makeScheduleJsonString() -> Result<String,Error> {
+    private func makeEventJsonString() -> Result<String,Error> {
         
         guard let eventName = eventNameTextfField.text, eventName != "" else {
             return .failure(NSError(domain: "イベント名が未入力です", code: -1, userInfo: nil))
