@@ -380,6 +380,40 @@
 			<key>uniqueIdentifier</key>
 			<string>595F6DBC-B87D-4DD3-AC85-B0A47A81DAF5</string>
 		</dict>
+		<key>66C05E78-E77E-4577-8D4C-8ECD6FBF82BA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>66C05E78-E77E-4577-8D4C-8ECD6FBF82BA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>635069660.34508598</real>
+			<key>timeStoppedRecording</key>
+			<real>635069667.03794098</real>
+			<key>title</key>
+			<string>Build FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>66C05E78-E77E-4577-8D4C-8ECD6FBF82BA</string>
+		</dict>
 		<key>930C2A4C-7A6F-42A7-9EEA-592FA3F067A4</key>
 		<dict>
 			<key>className</key>

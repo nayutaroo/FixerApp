@@ -346,6 +346,40 @@
 			<key>uniqueIdentifier</key>
 			<string>668B3697-BBD3-4BD1-AAA1-8548A606319C</string>
 		</dict>
+		<key>9235E2B8-A846-408A-B0BE-9A23C731CA74</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9235E2B8-A846-408A-B0BE-9A23C731CA74.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>635069311.728508</real>
+			<key>timeStoppedRecording</key>
+			<real>635069626.73065197</real>
+			<key>title</key>
+			<string>Run FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>9235E2B8-A846-408A-B0BE-9A23C731CA74</string>
+		</dict>
 		<key>B89AD75A-E28E-4D47-87D0-926EB0A2E573</key>
 		<dict>
 			<key>className</key>
@@ -379,6 +413,40 @@
 			<string>Run FixerApp</string>
 			<key>uniqueIdentifier</key>
 			<string>B89AD75A-E28E-4D47-87D0-926EB0A2E573</string>
+		</dict>
+		<key>B8B43BE4-57F8-4552-98B9-61D913723F1D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B8B43BE4-57F8-4552-98B9-61D913723F1D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>635069667.04574597</real>
+			<key>timeStoppedRecording</key>
+			<real>635069796.29016197</real>
+			<key>title</key>
+			<string>Run FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>B8B43BE4-57F8-4552-98B9-61D913723F1D</string>
 		</dict>
 		<key>C6F36009-30A6-4A85-BF27-1FF4500E2598</key>
 		<dict>
