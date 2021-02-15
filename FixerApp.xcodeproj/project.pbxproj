@@ -27,6 +27,13 @@
 		D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76D330625C27C9400E67DB2 /* LoginViewController.xib */; };
 		D770604625D7872D00E08916 /* didInputScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770604425D7872D00E08916 /* didInputScheduleViewController.swift */; };
 		D770604725D7872D00E08916 /* didInputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770604525D7872D00E08916 /* didInputScheduleViewController.xib */; };
+		D770605925D7AFEE00E08916 /* unenteredEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770605725D7AFEE00E08916 /* unenteredEventsTableViewCell.swift */; };
+		D770605A25D7AFEE00E08916 /* unenteredEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770605825D7AFEE00E08916 /* unenteredEventsTableViewCell.xib */; };
+		D770606025D7B00900E08916 /* enteredEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770605E25D7B00900E08916 /* enteredEventsTableViewCell.swift */; };
+		D770606125D7B00900E08916 /* enteredEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */; };
+		D770606725D7B01700E08916 /* confirmedEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */; };
+		D770606825D7B01700E08916 /* confirmedEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */; };
+		D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */; };
 		D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */; };
 		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
 		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
@@ -46,8 +53,6 @@
 		D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */; };
 		D77E3BA425C067EF00BC8BB6 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */; };
 		D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */; };
-		D77E3BB425C0FBD500BC8BB6 /* SchedulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BB225C0FBD500BC8BB6 /* SchedulesTableViewCell.swift */; };
-		D77E3BB525C0FBD500BC8BB6 /* SchedulesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3BB325C0FBD500BC8BB6 /* SchedulesTableViewCell.xib */; };
 		D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */; };
 		D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9825C7D3A500D6E708 /* Schedule.swift */; };
 		D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9E25C7D7C500D6E708 /* testdata.json */; };
@@ -105,6 +110,13 @@
 		D76D330625C27C9400E67DB2 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D770604425D7872D00E08916 /* didInputScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didInputScheduleViewController.swift; sourceTree = "<group>"; };
 		D770604525D7872D00E08916 /* didInputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = didInputScheduleViewController.xib; sourceTree = "<group>"; };
+		D770605725D7AFEE00E08916 /* unenteredEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unenteredEventsTableViewCell.swift; sourceTree = "<group>"; };
+		D770605825D7AFEE00E08916 /* unenteredEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = unenteredEventsTableViewCell.xib; sourceTree = "<group>"; };
+		D770605E25D7B00900E08916 /* enteredEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enteredEventsTableViewCell.swift; sourceTree = "<group>"; };
+		D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = enteredEventsTableViewCell.xib; sourceTree = "<group>"; };
+		D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmedEventsTableViewCell.swift; sourceTree = "<group>"; };
+		D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmedEventsTableViewCell.xib; sourceTree = "<group>"; };
+		D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NIb+Identifier+config.swift"; sourceTree = "<group>"; };
 		D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneStatus.swift; sourceTree = "<group>"; };
 		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
@@ -124,8 +136,6 @@
 		D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
-		D77E3BB225C0FBD500BC8BB6 /* SchedulesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesTableViewCell.swift; sourceTree = "<group>"; };
-		D77E3BB325C0FBD500BC8BB6 /* SchedulesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchedulesTableViewCell.xib; sourceTree = "<group>"; };
 		D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		D7BE6F9825C7D3A500D6E708 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		D7BE6F9E25C7D7C500D6E708 /* testdata.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; tabWidth = 2; };
@@ -215,8 +225,12 @@
 				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
 				D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */,
 				D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */,
-				D77E3BB225C0FBD500BC8BB6 /* SchedulesTableViewCell.swift */,
-				D77E3BB325C0FBD500BC8BB6 /* SchedulesTableViewCell.xib */,
+				D770605725D7AFEE00E08916 /* unenteredEventsTableViewCell.swift */,
+				D770605E25D7B00900E08916 /* enteredEventsTableViewCell.swift */,
+				D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */,
+				D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */,
+				D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */,
+				D770605825D7AFEE00E08916 /* unenteredEventsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +333,7 @@
 				D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */,
 				D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */,
 				D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */,
+				D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -454,10 +469,11 @@
 				D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */,
 				D752C9ED2595D312005A4889 /* LaunchScreen.storyboard in Resources */,
 				D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */,
+				D770605A25D7AFEE00E08916 /* unenteredEventsTableViewCell.xib in Resources */,
 				D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */,
-				D77E3BB525C0FBD500BC8BB6 /* SchedulesTableViewCell.xib in Resources */,
 				D752C9E82595D30E005A4889 /* Main.storyboard in Resources */,
 				D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */,
+				D770606125D7B00900E08916 /* enteredEventsTableViewCell.xib in Resources */,
 				D7BE6FCA25C9594B00D6E708 /* Key.plist in Resources */,
 				D776BD3925CAAC4F00E92BD4 /* plus.png in Resources */,
 				D776BD1B25CA992500E92BD4 /* check.png in Resources */,
@@ -466,6 +482,7 @@
 				D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */,
 				D71373AC25BD455600DBF96B /* MakeScheduleViewController.xib in Resources */,
 				D776BD3125CAA43F00E92BD4 /* MadeScheduleViewController.xib in Resources */,
+				D770606825D7B01700E08916 /* confirmedEventsTableViewCell.xib in Resources */,
 				D77E3B8725BE90AC00BC8BB6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,12 +617,14 @@
 				D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */,
 				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
 				D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */,
+				D770606725D7B01700E08916 /* confirmedEventsTableViewCell.swift in Sources */,
 				D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */,
 				D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */,
 				D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */,
 				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
 				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,
 				D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */,
+				D770606025D7B00900E08916 /* enteredEventsTableViewCell.swift in Sources */,
 				D71373A125BBBD4400DBF96B /* TimeZoneCell.swift in Sources */,
 				D752C9E12595D30E005A4889 /* AppDelegate.swift in Sources */,
 				D77E3BA425C067EF00BC8BB6 /* HomeTabViewController.swift in Sources */,
@@ -613,9 +632,10 @@
 				D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */,
 				D71373AB25BD455600DBF96B /* MakeScheduleViewController.swift in Sources */,
 				D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */,
+				D770605925D7AFEE00E08916 /* unenteredEventsTableViewCell.swift in Sources */,
+				D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
 				D770604625D7872D00E08916 /* didInputScheduleViewController.swift in Sources */,
-				D77E3BB425C0FBD500BC8BB6 /* SchedulesTableViewCell.swift in Sources */,
 				D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
