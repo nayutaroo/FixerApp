@@ -34,6 +34,8 @@
 		D770606725D7B01700E08916 /* confirmedEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */; };
 		D770606825D7B01700E08916 /* confirmedEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */; };
 		D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */; };
+		D770610325DA67E200E08916 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770610125DA67E200E08916 /* EventDetailViewController.swift */; };
+		D770610425DA67E200E08916 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770610225DA67E200E08916 /* EventDetailViewController.xib */; };
 		D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */; };
 		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
 		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
@@ -117,6 +119,8 @@
 		D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmedEventsTableViewCell.swift; sourceTree = "<group>"; };
 		D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmedEventsTableViewCell.xib; sourceTree = "<group>"; };
 		D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NIb+Identifier+config.swift"; sourceTree = "<group>"; };
+		D770610125DA67E200E08916 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		D770610225DA67E200E08916 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
 		D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneStatus.swift; sourceTree = "<group>"; };
 		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
 				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
 				D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */,
+				D770610125DA67E200E08916 /* EventDetailViewController.swift */,
+				D770610225DA67E200E08916 /* EventDetailViewController.xib */,
 				D71373A925BD455500DBF96B /* MakeScheduleViewController.swift */,
 				D71373AA25BD455500DBF96B /* MakeScheduleViewController.xib */,
 			);
@@ -463,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770610425DA67E200E08916 /* EventDetailViewController.xib in Resources */,
 				D770604725D7872D00E08916 /* didInputScheduleViewController.xib in Resources */,
 				D71373A225BBBD4400DBF96B /* TimeZoneCell.xib in Resources */,
 				D713739525BB18DF00DBF96B /* TimeZoneHeader.xib in Resources */,
@@ -632,6 +639,7 @@
 				D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */,
 				D71373AB25BD455600DBF96B /* MakeScheduleViewController.swift in Sources */,
 				D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */,
+				D770610325DA67E200E08916 /* EventDetailViewController.swift in Sources */,
 				D770605925D7AFEE00E08916 /* unenteredEventsTableViewCell.swift in Sources */,
 				D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
