@@ -19,5 +19,4 @@ class TimeZoneCell: UICollectionViewCell {
     override func prepareForReuse() {
         status = .unavailable
     }
-
 }

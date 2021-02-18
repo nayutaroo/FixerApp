@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LoginManager.shared.setup(channelID: Key.LineChannelID, universalLinkURL: nil)
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: HomeTabViewController())
+        window.rootViewController = UINavigationController(rootViewController: EventDetailViewController())
+//        window.rootViewController = UINavigationController(rootViewController: HomeTabViewController())
 //        window.rootViewController = UINavigationController(rootViewController: LoginViewController())
         
         self.window = window

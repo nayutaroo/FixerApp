@@ -51,8 +51,8 @@ class InputScheduleViewController: UIViewController {
         layout.minimumInteritemSpacing = 1
         let size = UIScreen.main.bounds.size
         layout.itemSize = CGSize(width: (size.width - 70) / 8, height: 60)
-    
         timeZoneColectionView.collectionViewLayout = layout
+        
         timeZoneColectionView.register(UINib(nibName: "TimeZoneCell", bundle: nil), forCellWithReuseIdentifier: "timeZoneCell")
         timeZoneColectionView.register(UINib(nibName: "TimeZoneHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "timeZoneHeader")
     

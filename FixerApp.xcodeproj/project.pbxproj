@@ -36,6 +36,7 @@
 		D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */; };
 		D770610325DA67E200E08916 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770610125DA67E200E08916 /* EventDetailViewController.swift */; };
 		D770610425DA67E200E08916 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770610225DA67E200E08916 /* EventDetailViewController.xib */; };
+		D77061A125DE51E900E08916 /* BidirectionalCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */; };
 		D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */; };
 		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
 		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
@@ -121,6 +122,7 @@
 		D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NIb+Identifier+config.swift"; sourceTree = "<group>"; };
 		D770610125DA67E200E08916 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		D770610225DA67E200E08916 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
+		D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalCollectionLayout.swift; sourceTree = "<group>"; };
 		D776BCFC25CA930800E92BD4 /* TimezoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneStatus.swift; sourceTree = "<group>"; };
 		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */,
 				D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */,
 				D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */,
+				D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D776BD5025CD92B900E92BD4 /* SwipeSelectingCollectionView.swift in Sources */,
+				D77061A125DE51E900E08916 /* BidirectionalCollectionLayout.swift in Sources */,
 				D776BD4B25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift in Sources */,
 				D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */,
 				D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */,
