@@ -6,13 +6,18 @@
 //
 
 import UIKit
+import RxSwift
 
 
 // UICollectionView 縦幅
 
 class EventDetailViewController: UIViewController{
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var startInputButton: UIButton! {
+        didSet {
+            startInputButton.cornerRadius = 10
+        }
+    }
     @IBOutlet weak var eventDetailCollectionView: UICollectionView!{
         didSet {
             eventDetailCollectionView.delegate = self
@@ -20,15 +25,22 @@ class EventDetailViewController: UIViewController{
             eventDetailCollectionView.register(UINib(nibName: "TimeZoneCell", bundle: nil), forCellWithReuseIdentifier: "timeZoneCell")
         }
     }
+    private let disposeBag = DisposeBag()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let layout = BidirectionalCollectionLayout()
         layout.delegate = self
         eventDetailCollectionView.collectionViewLayout = layout
         eventDetailCollectionView.reloadData()
         
+        startInputButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                self?.navigationController?.pushViewController(InputScheduleViewController(jsonString: nil), animated: true)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
