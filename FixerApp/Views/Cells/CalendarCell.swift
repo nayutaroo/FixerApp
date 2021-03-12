@@ -5,6 +5,7 @@
 //  Created by 化田晃平 on R 3/01/25.
 //
 
+
 import Foundation
 import UIKit
 import FSCalendar
@@ -25,7 +26,6 @@ class CalendarCell: FSCalendarCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     var selectionType: SelectionType = .none {
@@ -41,6 +41,8 @@ class CalendarCell: FSCalendarCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+// TODO: カレンダーのセルの内容を編集する。
+
 //        let circleImageView = UIImageView(image: UIImage(named: "circle")!)
 //        self.contentView.insertSubview(circleImageView, at: 0)
 //        self.circleImageView = circleImageView

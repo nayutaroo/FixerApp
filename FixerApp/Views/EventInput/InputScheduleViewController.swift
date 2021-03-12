@@ -25,7 +25,6 @@ class InputScheduleViewController: UIViewController {
     @IBOutlet weak var buttonTriangle: UIButton!
     @IBOutlet weak var buttonCross: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
-
     
     init(jsonString: String?) {
         self.jsonString =  jsonString
@@ -170,8 +169,6 @@ extension InputScheduleViewController: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return selectedDate.count
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         

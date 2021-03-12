@@ -8,17 +8,14 @@
 import UIKit
 import RxSwift
 
-
-// UICollectionView 縦幅
-
-class EventDetailViewController: UIViewController{
+class EventDetailViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var startInputButton: UIButton! {
         didSet {
             startInputButton.cornerRadius = 10
         }
     }
-    @IBOutlet weak var eventDetailCollectionView: UICollectionView!{
+    @IBOutlet weak var eventDetailCollectionView: UICollectionView! {
         didSet {
             eventDetailCollectionView.delegate = self
             eventDetailCollectionView.dataSource = self
@@ -50,10 +47,9 @@ extension EventDetailViewController: UICollectionViewDelegate {
     }
 }
 
-
 extension EventDetailViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -63,7 +59,6 @@ extension EventDetailViewController: UICollectionViewDataSource {
             cell.backgroundColor = .blue
             cell.layer.cornerRadius = 5
         }
-        
         return cell
     }
 }
@@ -71,11 +66,6 @@ extension EventDetailViewController: UICollectionViewDataSource {
 extension EventDetailViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 60, height: 40)
+        return CGSize(width: 40, height: 30)
     }
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        print("呼ばれた")
-//        return CGFloat(10)
-//    }
 }

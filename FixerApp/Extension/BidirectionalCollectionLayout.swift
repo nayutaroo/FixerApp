@@ -11,11 +11,9 @@ final class BidirectionalCollectionLayout: UICollectionViewFlowLayout {
     //列間のマージン
     private let marginInterItemsForSection : Int = 1
     //セクション間のマージン
-    private let marginInterSection : Int = 5
+    private let marginInterSection : Int = 1
     
     private func calcMaxRowsWidth() {
-
-        
         guard
             let collectionView = self.collectionView,
             let delegate = self.delegate

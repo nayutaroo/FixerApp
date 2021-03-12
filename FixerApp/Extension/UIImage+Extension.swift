@@ -1,5 +1,5 @@
 //
-//  UIImage+Scale.swift
+//  UIImage+Extension.swift
 //  FixerApp
 //
 //  Created by 化田晃平 on R 3/02/03.
