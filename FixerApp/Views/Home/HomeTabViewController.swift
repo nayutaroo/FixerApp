@@ -89,13 +89,6 @@ class HomeTabViewController: UITabBarController {
             }
             guard isDistributed == false else { continue }
             enteredEvents.append(event)
-//            for enteredUser in event.enteredUsers {
-//                if userID == enteredUser.id {
-//                    enteredEvents.append(event)
-//                    isDistributed = true
-//                    break
-//                }
-//            }
         }
         
         navigationItem.title = "Fixer"
@@ -146,26 +139,10 @@ class HomeTabViewController: UITabBarController {
                print(error)
                 return []
             }
-//            guard let events = try? decoder.decode([Event].self, from: jsonString2.data(using: .utf8)!) else {
-//                print("error")
-//                return []
-//            }
-//            return events
     }
     
 
     @objc func newButtonTapped(_ sender: Any) {
         navigationController?.pushViewController(MakeScheduleViewController(), animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

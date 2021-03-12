@@ -17,8 +17,6 @@
 		D71373AC25BD455600DBF96B /* MakeScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D71373AA25BD455500DBF96B /* MakeScheduleViewController.xib */; };
 		D752C9E12595D30E005A4889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E02595D30E005A4889 /* AppDelegate.swift */; };
 		D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E22595D30E005A4889 /* SceneDelegate.swift */; };
-		D752C9E52595D30E005A4889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9E42595D30E005A4889 /* ViewController.swift */; };
-		D752C9E82595D30E005A4889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D752C9E62595D30E005A4889 /* Main.storyboard */; };
 		D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D752C9E92595D312005A4889 /* Assets.xcassets */; };
 		D752C9ED2595D312005A4889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D752C9EB2595D312005A4889 /* LaunchScreen.storyboard */; };
 		D752C9F82595D313005A4889 /* FixerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752C9F72595D313005A4889 /* FixerAppTests.swift */; };
@@ -33,7 +31,7 @@
 		D770606125D7B00900E08916 /* enteredEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */; };
 		D770606725D7B01700E08916 /* confirmedEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */; };
 		D770606825D7B01700E08916 /* confirmedEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */; };
-		D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */; };
+		D770606D25D7BAF100E08916 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770606C25D7BAF100E08916 /* UITableViewCell+Extension.swift */; };
 		D770610325DA67E200E08916 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770610125DA67E200E08916 /* EventDetailViewController.swift */; };
 		D770610425DA67E200E08916 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770610225DA67E200E08916 /* EventDetailViewController.xib */; };
 		D77061A125DE51E900E08916 /* BidirectionalCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */; };
@@ -41,7 +39,7 @@
 		D776BD1B25CA992500E92BD4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1A25CA992500E92BD4 /* check.png */; };
 		D776BD2025CA993000E92BD4 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD1F25CA993000E92BD4 /* file.png */; };
 		D776BD2525CA993700E92BD4 /* document.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD2425CA993700E92BD4 /* document.png */; };
-		D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */; };
+		D776BD2A25CA99D500E92BD4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2925CA99D500E92BD4 /* UIImage+Extension.swift */; };
 		D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */; };
 		D776BD3125CAA43F00E92BD4 /* MadeScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */; };
 		D776BD3925CAAC4F00E92BD4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D776BD3825CAAC4F00E92BD4 /* plus.png */; };
@@ -51,12 +49,12 @@
 		D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */; };
 		D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */; };
 		D77E3B8725BE90AC00BC8BB6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */; };
-		D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */; };
 		D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */; };
 		D77E3B9925BEED8600BC8BB6 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */; };
 		D77E3BA425C067EF00BC8BB6 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */; };
 		D77E3BA525C067EF00BC8BB6 /* HomeTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */; };
-		D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */; };
+		D77E3BBB25C1031B00BC8BB6 /* UIView+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E3BBA25C1031B00BC8BB6 /* UIView+Inspectable.swift */; };
+		D7B67B3225DFC9EA00480873 /* TimezoneToSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B67B3125DFC9EA00480873 /* TimezoneToSchedule.swift */; };
 		D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9825C7D3A500D6E708 /* Schedule.swift */; };
 		D7BE6F9F25C7D7C500D6E708 /* testdata.json in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6F9E25C7D7C500D6E708 /* testdata.json */; };
 		D7BE6FAF25C7E18800D6E708 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE6FAE25C7E18800D6E708 /* Key.swift */; };
@@ -98,8 +96,6 @@
 		D752C9DD2595D30E005A4889 /* FixerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D752C9E02595D30E005A4889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D752C9E22595D30E005A4889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D752C9E42595D30E005A4889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D752C9E72595D30E005A4889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D752C9E92595D312005A4889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D752C9EC2595D312005A4889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D752C9EE2595D312005A4889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,7 +115,7 @@
 		D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = enteredEventsTableViewCell.xib; sourceTree = "<group>"; };
 		D770606525D7B01700E08916 /* confirmedEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmedEventsTableViewCell.swift; sourceTree = "<group>"; };
 		D770606625D7B01700E08916 /* confirmedEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmedEventsTableViewCell.xib; sourceTree = "<group>"; };
-		D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+NIb+Identifier+config.swift"; sourceTree = "<group>"; };
+		D770606C25D7BAF100E08916 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		D770610125DA67E200E08916 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		D770610225DA67E200E08916 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
 		D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalCollectionLayout.swift; sourceTree = "<group>"; };
@@ -127,7 +123,7 @@
 		D776BD1A25CA992500E92BD4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		D776BD1F25CA993000E92BD4 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
 		D776BD2425CA993700E92BD4 /* document.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document.png; sourceTree = "<group>"; };
-		D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		D776BD2925CA99D500E92BD4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeScheduleViewController.swift; sourceTree = "<group>"; };
 		D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MadeScheduleViewController.xib; sourceTree = "<group>"; };
 		D776BD3825CAAC4F00E92BD4 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
@@ -137,12 +133,12 @@
 		D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputScheduleViewController.xib; sourceTree = "<group>"; };
 		D77E3B8425BE90AC00BC8BB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D77E3B8525BE90AC00BC8BB6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYcalendarCell.swift; sourceTree = "<group>"; };
 		D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		D77E3BA225C067EF00BC8BB6 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		D77E3BA325C067EF00BC8BB6 /* HomeTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabViewController.xib; sourceTree = "<group>"; };
-		D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		D77E3BBA25C1031B00BC8BB6 /* UIView+Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectable.swift"; sourceTree = "<group>"; };
+		D7B67B3125DFC9EA00480873 /* TimezoneToSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneToSchedule.swift; sourceTree = "<group>"; };
 		D7BE6F9825C7D3A500D6E708 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		D7BE6F9E25C7D7C500D6E708 /* testdata.json */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; tabWidth = 2; };
 		D7BE6FAE25C7E18800D6E708 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
@@ -202,35 +198,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D71373B025BD455D00DBF96B /* ViewController */ = {
+		D71373B025BD455D00DBF96B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D77E3B8325BE905E00BC8BB6 /* Main(deleted) */,
+				D798724425FB3F1300890047 /* Extensions */,
+				D71373B925BD480000DBF96B /* Cells */,
+				D798724525FB3FC600890047 /* Header */,
+				D798724A25FB40B800890047 /* Login */,
+				D798724925FB407B00890047 /* EventMake */,
+				D798724C25FB40EA00890047 /* EventInput */,
+				D798724B25FB40D400890047 /* EventDetail */,
 				D77E3BA125C0679400BC8BB6 /* Home */,
-				D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */,
-				D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */,
-				D770604425D7872D00E08916 /* didInputScheduleViewController.swift */,
-				D770604525D7872D00E08916 /* didInputScheduleViewController.xib */,
-				D76D330525C27C9400E67DB2 /* LoginViewController.swift */,
-				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
-				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
-				D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */,
-				D770610125DA67E200E08916 /* EventDetailViewController.swift */,
-				D770610225DA67E200E08916 /* EventDetailViewController.xib */,
-				D71373A925BD455500DBF96B /* MakeScheduleViewController.swift */,
-				D71373AA25BD455500DBF96B /* MakeScheduleViewController.xib */,
+				D798725025FB412500890047 /* Finish */,
 			);
-			path = ViewController;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		D71373B925BD480000DBF96B /* View */ = {
+		D71373B925BD480000DBF96B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D776BD4F25CD92B900E92BD4 /* SwipeSelectingCollectionView.swift */,
-				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
 				D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */,
 				D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */,
-				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
 				D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */,
 				D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */,
 				D770605725D7AFEE00E08916 /* unenteredEventsTableViewCell.swift */,
@@ -240,7 +228,7 @@
 				D770605F25D7B00900E08916 /* enteredEventsTableViewCell.xib */,
 				D770605825D7AFEE00E08916 /* unenteredEventsTableViewCell.xib */,
 			);
-			path = View;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D752C9D42595D30D005A4889 = {
@@ -268,11 +256,11 @@
 		D752C9DF2595D30E005A4889 /* FixerApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7B67B3025DFC94F00480873 /* Entity */,
 				D776BD0125CA965E00E92BD4 /* Image */,
 				D7BE6F9D25C7D7A500D6E708 /* TestData */,
 				D7BE6F9725C7D37400D6E708 /* Model */,
-				D71373B025BD455D00DBF96B /* ViewController */,
-				D71373B925BD480000DBF96B /* View */,
+				D71373B025BD455D00DBF96B /* Views */,
 				D77E3BB925C102CE00BC8BB6 /* Extension */,
 				D752C9E22595D30E005A4889 /* SceneDelegate.swift */,
 				D752C9E02595D30E005A4889 /* AppDelegate.swift */,
@@ -314,16 +302,6 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		D77E3B8325BE905E00BC8BB6 /* Main(deleted) */ = {
-			isa = PBXGroup;
-			children = (
-				D77E3B9125BEE62100BC8BB6 /* DIYcalendarCell.swift */,
-				D752C9E62595D30E005A4889 /* Main.storyboard */,
-				D752C9E42595D30E005A4889 /* ViewController.swift */,
-			);
-			path = "Main(deleted)";
-			sourceTree = "<group>";
-		};
 		D77E3BA125C0679400BC8BB6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,13 +316,85 @@
 		D77E3BB925C102CE00BC8BB6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D77E3BBA25C1031B00BC8BB6 /* UIView+Border.swift */,
-				D776BD2925CA99D500E92BD4 /* UIImage+Scale.swift */,
+				D77E3BBA25C1031B00BC8BB6 /* UIView+Inspectable.swift */,
+				D776BD2925CA99D500E92BD4 /* UIImage+Extension.swift */,
 				D776BD4A25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift */,
-				D770606C25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift */,
+				D770606C25D7BAF100E08916 /* UITableViewCell+Extension.swift */,
 				D77061A025DE51E800E08916 /* BidirectionalCollectionLayout.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D798724425FB3F1300890047 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D776BD4F25CD92B900E92BD4 /* SwipeSelectingCollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D798724525FB3FC600890047 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
+				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D798724925FB407B00890047 /* EventMake */ = {
+			isa = PBXGroup;
+			children = (
+				D71373A925BD455500DBF96B /* MakeScheduleViewController.swift */,
+				D71373AA25BD455500DBF96B /* MakeScheduleViewController.xib */,
+			);
+			path = EventMake;
+			sourceTree = "<group>";
+		};
+		D798724A25FB40B800890047 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D76D330525C27C9400E67DB2 /* LoginViewController.swift */,
+				D76D330625C27C9400E67DB2 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D798724B25FB40D400890047 /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D770610225DA67E200E08916 /* EventDetailViewController.xib */,
+				D770610125DA67E200E08916 /* EventDetailViewController.swift */,
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		D798724C25FB40EA00890047 /* EventInput */ = {
+			isa = PBXGroup;
+			children = (
+				D77E3B7D25BE8B0B00BC8BB6 /* InputScheduleViewController.xib */,
+				D77E3B7C25BE8B0B00BC8BB6 /* InputScheduleViewController.swift */,
+			);
+			path = EventInput;
+			sourceTree = "<group>";
+		};
+		D798725025FB412500890047 /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+				D770604525D7872D00E08916 /* didInputScheduleViewController.xib */,
+				D770604425D7872D00E08916 /* didInputScheduleViewController.swift */,
+				D776BD2F25CAA43F00E92BD4 /* MadeScheduleViewController.xib */,
+				D776BD2E25CAA43F00E92BD4 /* MadeScheduleViewController.swift */,
+			);
+			path = Finish;
+			sourceTree = "<group>";
+		};
+		D7B67B3025DFC94F00480873 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D7B67B3125DFC9EA00480873 /* TimezoneToSchedule.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		D7BE6F9725C7D37400D6E708 /* Model */ = {
@@ -481,7 +531,6 @@
 				D77E3B7F25BE8B0B00BC8BB6 /* InputScheduleViewController.xib in Resources */,
 				D770605A25D7AFEE00E08916 /* unenteredEventsTableViewCell.xib in Resources */,
 				D752C9EA2595D312005A4889 /* Assets.xcassets in Resources */,
-				D752C9E82595D30E005A4889 /* Main.storyboard in Resources */,
 				D76D330825C27C9400E67DB2 /* LoginViewController.xib in Resources */,
 				D770606125D7B00900E08916 /* enteredEventsTableViewCell.xib in Resources */,
 				D7BE6FCA25C9594B00D6E708 /* Key.plist in Resources */,
@@ -626,14 +675,12 @@
 				D776BD4B25CD927B00E92BD4 /* SwipeSelectingGestureRecognizer.swift in Sources */,
 				D776BD3025CAA43F00E92BD4 /* MadeScheduleViewController.swift in Sources */,
 				D76D330725C27C9400E67DB2 /* LoginViewController.swift in Sources */,
-				D77E3B9225BEE62100BC8BB6 /* DIYcalendarCell.swift in Sources */,
 				D77E3B7E25BE8B0B00BC8BB6 /* InputScheduleViewController.swift in Sources */,
 				D770606725D7B01700E08916 /* confirmedEventsTableViewCell.swift in Sources */,
-				D77E3BBB25C1031B00BC8BB6 /* UIView+Border.swift in Sources */,
+				D77E3BBB25C1031B00BC8BB6 /* UIView+Inspectable.swift in Sources */,
 				D7BE6F9925C7D3A500D6E708 /* Schedule.swift in Sources */,
-				D776BD2A25CA99D500E92BD4 /* UIImage+Scale.swift in Sources */,
+				D776BD2A25CA99D500E92BD4 /* UIImage+Extension.swift in Sources */,
 				D713739425BB18DF00DBF96B /* TimeZoneHeader.swift in Sources */,
-				D752C9E52595D30E005A4889 /* ViewController.swift in Sources */,
 				D77E3B8625BE90AC00BC8BB6 /* HomeViewController.swift in Sources */,
 				D770606025D7B00900E08916 /* enteredEventsTableViewCell.swift in Sources */,
 				D71373A125BBBD4400DBF96B /* TimeZoneCell.swift in Sources */,
@@ -645,7 +692,8 @@
 				D776BCFD25CA930800E92BD4 /* TimezoneStatus.swift in Sources */,
 				D770610325DA67E200E08916 /* EventDetailViewController.swift in Sources */,
 				D770605925D7AFEE00E08916 /* unenteredEventsTableViewCell.swift in Sources */,
-				D770606D25D7BAF100E08916 /* UITableViewCell+NIb+Identifier+config.swift in Sources */,
+				D7B67B3225DFC9EA00480873 /* TimezoneToSchedule.swift in Sources */,
+				D770606D25D7BAF100E08916 /* UITableViewCell+Extension.swift in Sources */,
 				D752C9E32595D30E005A4889 /* SceneDelegate.swift in Sources */,
 				D770604625D7872D00E08916 /* didInputScheduleViewController.swift in Sources */,
 				D77E3B9825BEED8600BC8BB6 /* CalendarCell.swift in Sources */,
@@ -684,14 +732,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D752C9E62595D30E005A4889 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D752C9E72595D30E005A4889 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D752C9EB2595D312005A4889 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

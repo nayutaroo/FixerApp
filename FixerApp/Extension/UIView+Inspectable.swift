@@ -1,5 +1,5 @@
 //
-//  UIView+Border.swift
+//  UIView+Inspectable.swift
 //  FixerApp
 //
 //  Created by 化田晃平 on R 3/01/27.

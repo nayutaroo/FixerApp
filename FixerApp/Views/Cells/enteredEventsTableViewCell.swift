@@ -39,10 +39,6 @@ class enteredEventsTableViewCell: UITableViewCell {
             return "\(formatter.string(from: $0.date)) \($0.from)時〜\($0.to)時"
         }
         possibleTimezoneLabel.text = "候補日:\n\(timezoneStrings.joined(separator: "\n"))"
-        
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-//        deadlineLabel.text = formatter.string(from: event.deadline)
     }
     
 }
