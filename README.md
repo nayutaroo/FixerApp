@@ -11,7 +11,7 @@ Moqups https://app.moqups.com/g04eNwL1Vn/view/page/ad64222d5
 MindMeister https://www.mindmeister.com/1761959867 
 
 ## 開発状況
-現在feature/#10ブランチで詳細画面の開発中です。
+現在feature/#10ブランチで詳細画面の開発中です。　https://github.com/Tech-Nayuta/FixerApp/pull/11
 
 
 ## Demo
