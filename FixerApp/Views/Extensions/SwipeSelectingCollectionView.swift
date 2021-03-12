@@ -18,12 +18,13 @@ public class SwipeSelectingCollectionView: UICollectionView {
       case selecting, deselecting
   }
 
+ //なぜlazy varで定義している？
   lazy private var panSelectingGestureRecognizer: UIPanGestureRecognizer = {
       let gestureRecognizer = SwipeSelectingGestureRecognizer(
           target: self,
           action: #selector(SwipeSelectingCollectionView.didPanSelectingGestureRecognizerChange(gestureRecognizer:)))
       return gestureRecognizer
-  } ()
+  }()
 
   required public init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)

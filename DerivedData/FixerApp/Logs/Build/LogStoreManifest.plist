@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>005F5B9E-88ED-4499-AC61-C005A7D3CA4C</key>
+		<key>2505736A-22C9-44CB-8A7F-BE00F8D722AF</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,41 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>005F5B9E-88ED-4499-AC61-C005A7D3CA4C.xcactivitylog</string>
+			<string>2505736A-22C9-44CB-8A7F-BE00F8D722AF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FixerApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FixerApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FixerApp</string>
+			<key>timeStartedRecording</key>
+			<real>636439587.46053398</real>
+			<key>timeStoppedRecording</key>
+			<real>636439596.504987</real>
+			<key>title</key>
+			<string>Build FixerApp</string>
+			<key>uniqueIdentifier</key>
+			<string>2505736A-22C9-44CB-8A7F-BE00F8D722AF</string>
+		</dict>
+		<key>2E76DE5A-BDE1-4439-ADD1-D8719DBB95C7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2E76DE5A-BDE1-4439-ADD1-D8719DBB95C7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +66,15 @@
 			<key>signature</key>
 			<string>Build FixerApp</string>
 			<key>timeStartedRecording</key>
-			<real>635069253.48468804</real>
+			<real>637222277.84553301</real>
 			<key>timeStoppedRecording</key>
-			<real>635069256.50509906</real>
+			<real>637222289.83158898</real>
 			<key>title</key>
 			<string>Build FixerApp</string>
 			<key>uniqueIdentifier</key>
-			<string>005F5B9E-88ED-4499-AC61-C005A7D3CA4C</string>
+			<string>2E76DE5A-BDE1-4439-ADD1-D8719DBB95C7</string>
 		</dict>
-		<key>03CB6D67-09F5-4634-8947-947B03813B04</key>
+		<key>88A3AC37-70FC-4741-BEC6-90C348A1F347</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,41 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>03CB6D67-09F5-4634-8947-947B03813B04.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635069086.25351906</real>
-			<key>timeStoppedRecording</key>
-			<real>635069088.85706997</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>03CB6D67-09F5-4634-8947-947B03813B04</string>
-		</dict>
-		<key>0A8268B6-5895-45AC-A747-3A901E68CAB3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0A8268B6-5895-45AC-A747-3A901E68CAB3.xcactivitylog</string>
+			<string>88A3AC37-70FC-4741-BEC6-90C348A1F347.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,523 +100,13 @@
 			<key>signature</key>
 			<string>Build FixerApp</string>
 			<key>timeStartedRecording</key>
-			<real>635000982.12871802</real>
+			<real>637222031.72768998</real>
 			<key>timeStoppedRecording</key>
-			<real>635000982.63176203</real>
+			<real>637222051.70563996</real>
 			<key>title</key>
 			<string>Build FixerApp</string>
 			<key>uniqueIdentifier</key>
-			<string>0A8268B6-5895-45AC-A747-3A901E68CAB3</string>
-		</dict>
-		<key>0B9F6EFF-4DA2-427E-8B54-E611DC853AD6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0B9F6EFF-4DA2-427E-8B54-E611DC853AD6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635067544.88761699</real>
-			<key>timeStoppedRecording</key>
-			<real>635067550.47964704</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>0B9F6EFF-4DA2-427E-8B54-E611DC853AD6</string>
-		</dict>
-		<key>1057E9A2-2E4D-4CEB-BF7C-D85B58E63199</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1057E9A2-2E4D-4CEB-BF7C-D85B58E63199.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635067165.40310895</real>
-			<key>timeStoppedRecording</key>
-			<real>635067168.06045794</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>1057E9A2-2E4D-4CEB-BF7C-D85B58E63199</string>
-		</dict>
-		<key>1ADA60F6-CDA9-4E4B-A0D6-D547C89FF73A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1ADA60F6-CDA9-4E4B-A0D6-D547C89FF73A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068818.64006901</real>
-			<key>timeStoppedRecording</key>
-			<real>635068823.38024902</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>1ADA60F6-CDA9-4E4B-A0D6-D547C89FF73A</string>
-		</dict>
-		<key>2C6757A3-4F39-4B10-BD73-A6BA8D6B9199</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2C6757A3-4F39-4B10-BD73-A6BA8D6B9199.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068526.08916295</real>
-			<key>timeStoppedRecording</key>
-			<real>635068530.66013801</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>2C6757A3-4F39-4B10-BD73-A6BA8D6B9199</string>
-		</dict>
-		<key>34196A35-054E-445F-A263-D28E66A334DE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>34196A35-054E-445F-A263-D28E66A334DE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635067971.05517995</real>
-			<key>timeStoppedRecording</key>
-			<real>635067974.43491197</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>34196A35-054E-445F-A263-D28E66A334DE</string>
-		</dict>
-		<key>44F15117-C2B4-4FC8-B9B3-62B74DDC7B6C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>44F15117-C2B4-4FC8-B9B3-62B74DDC7B6C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635069292.50461805</real>
-			<key>timeStoppedRecording</key>
-			<real>635069299.52988505</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>44F15117-C2B4-4FC8-B9B3-62B74DDC7B6C</string>
-		</dict>
-		<key>4703DD33-BC1B-454B-A9F4-6F560F7AA777</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4703DD33-BC1B-454B-A9F4-6F560F7AA777.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068633.99362397</real>
-			<key>timeStoppedRecording</key>
-			<real>635068640.69396305</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>4703DD33-BC1B-454B-A9F4-6F560F7AA777</string>
-		</dict>
-		<key>595F6DBC-B87D-4DD3-AC85-B0A47A81DAF5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>595F6DBC-B87D-4DD3-AC85-B0A47A81DAF5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635067819.56724095</real>
-			<key>timeStoppedRecording</key>
-			<real>635067823.857095</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>595F6DBC-B87D-4DD3-AC85-B0A47A81DAF5</string>
-		</dict>
-		<key>930C2A4C-7A6F-42A7-9EEA-592FA3F067A4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>930C2A4C-7A6F-42A7-9EEA-592FA3F067A4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635069166.06671596</real>
-			<key>timeStoppedRecording</key>
-			<real>635069166.97098804</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>930C2A4C-7A6F-42A7-9EEA-592FA3F067A4</string>
-		</dict>
-		<key>95D4DB43-B12C-41A4-864E-0CA4EAD23157</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>95D4DB43-B12C-41A4-864E-0CA4EAD23157.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635069224.89389002</real>
-			<key>timeStoppedRecording</key>
-			<real>635069228.76304805</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>95D4DB43-B12C-41A4-864E-0CA4EAD23157</string>
-		</dict>
-		<key>968A843D-B7FA-4939-8D12-F15674BDB040</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>968A843D-B7FA-4939-8D12-F15674BDB040.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068552.96852505</real>
-			<key>timeStoppedRecording</key>
-			<real>635068556.37398601</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>968A843D-B7FA-4939-8D12-F15674BDB040</string>
-		</dict>
-		<key>A98270B5-86E2-4689-AC78-3AC0994AAAA1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A98270B5-86E2-4689-AC78-3AC0994AAAA1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635069308.822891</real>
-			<key>timeStoppedRecording</key>
-			<real>635069311.72337902</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>A98270B5-86E2-4689-AC78-3AC0994AAAA1</string>
-		</dict>
-		<key>CC54BE05-B589-455B-92A5-3000358EC5B9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>CC54BE05-B589-455B-92A5-3000358EC5B9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635067591.81758201</real>
-			<key>timeStoppedRecording</key>
-			<real>635067592.06187606</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>CC54BE05-B589-455B-92A5-3000358EC5B9</string>
-		</dict>
-		<key>D918B733-2F1D-4850-8CE6-BD541951F7D2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D918B733-2F1D-4850-8CE6-BD541951F7D2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068696.58301198</real>
-			<key>timeStoppedRecording</key>
-			<real>635068700.76470602</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>D918B733-2F1D-4850-8CE6-BD541951F7D2</string>
-		</dict>
-		<key>F7552755-43C8-43CF-9789-70B5D368491C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F7552755-43C8-43CF-9789-70B5D368491C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FixerApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FixerApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FixerApp</string>
-			<key>timeStartedRecording</key>
-			<real>635068594.70343101</real>
-			<key>timeStoppedRecording</key>
-			<real>635068597.79228699</real>
-			<key>title</key>
-			<string>Build FixerApp</string>
-			<key>uniqueIdentifier</key>
-			<string>F7552755-43C8-43CF-9789-70B5D368491C</string>
+			<string>88A3AC37-70FC-4741-BEC6-90C348A1F347</string>
 		</dict>
 	</dict>
 </dict>

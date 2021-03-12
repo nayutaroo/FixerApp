@@ -18,8 +18,8 @@ class MakeScheduleViewController: UIViewController {
     @IBOutlet weak var makeButton: UIButton!
     @IBOutlet weak var calendar: FSCalendar!
   
-    @IBOutlet weak var timeZonePickerView: UIPickerView!{
-        didSet{
+    @IBOutlet weak var timeZonePickerView: UIPickerView! {
+        didSet {
             timeZonePickerView.dataSource = self
             timeZonePickerView.delegate = self
         }
@@ -127,7 +127,7 @@ extension MakeScheduleViewController: FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
         //表示する形式をformatterで指定
-        selectedDate.removeAll(where: {$0 == date})
+        selectedDate.removeAll(where: { $0 == date })
     }
 }
 
@@ -143,7 +143,7 @@ extension MakeScheduleViewController: UIPickerViewDelegate {
         if(component == 0) {
             return "\(timeZoneItems[row])時から"
         }
-        else{
+        else {
             return "\(timeZoneItems[row])時まで"
         }
     }

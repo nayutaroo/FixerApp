@@ -25,7 +25,6 @@ class InputScheduleViewController: UIViewController {
     @IBOutlet weak var buttonTriangle: UIButton!
     @IBOutlet weak var buttonCross: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
-
     
     init(jsonString: String?) {
         self.jsonString =  jsonString
@@ -51,8 +50,8 @@ class InputScheduleViewController: UIViewController {
         layout.minimumInteritemSpacing = 1
         let size = UIScreen.main.bounds.size
         layout.itemSize = CGSize(width: (size.width - 70) / 8, height: 60)
-    
         timeZoneColectionView.collectionViewLayout = layout
+        
         timeZoneColectionView.register(UINib(nibName: "TimeZoneCell", bundle: nil), forCellWithReuseIdentifier: "timeZoneCell")
         timeZoneColectionView.register(UINib(nibName: "TimeZoneHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "timeZoneHeader")
     
@@ -170,8 +169,6 @@ extension InputScheduleViewController: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return selectedDate.count
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
