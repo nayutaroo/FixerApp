@@ -217,10 +217,8 @@
 		D71373B925BD480000DBF96B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
 				D713739F25BBBD4400DBF96B /* TimeZoneCell.swift */,
 				D71373A025BBBD4400DBF96B /* TimeZoneCell.xib */,
-				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
 				D77E3B9625BEED8600BC8BB6 /* CalendarCell.swift */,
 				D77E3B9725BEED8600BC8BB6 /* CalendarCell.xib */,
 				D770605725D7AFEE00E08916 /* unenteredEventsTableViewCell.swift */,
@@ -338,6 +336,8 @@
 		D798724525FB3FC600890047 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				D713739325BB18DF00DBF96B /* TimeZoneHeader.xib */,
+				D713739225BB18DF00DBF96B /* TimeZoneHeader.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
